@@ -1,0 +1,122 @@
+LICENSE.md
+Transductive Relational Simulator & Framework
+Non-Commercial Ethical & Ecological License v1.0
+Copyright © 2025 Tyrone
+Framework: Transductive Coherence Theory
+Website: https://TransductiveCoherenceTheory.org
+
+1. Purpose
+This license ensures that the Transductive Relational Simulator, its mathematics, algorithms, and theoretical framework remain free, open, ethical, and ecologically aligned — for the benefit of all life.
+
+It is intended to seed a new foundation for non-exploitative knowledge and conscious technological development.
+
+2. Permissions
+You are free to:
+
+Study, use, and adapt the simulator and its framework for non-profit purposes
+
+Share and distribute the simulator or derivatives under this same license
+
+Use in academic research, education, personal exploration, and artistic work
+
+Train AI models on this code or framework only for non-commercial, non-exploitative purposes
+
+3. Conditions
+A. Attribution
+You must credit the original author and framework clearly in any use or redistribution:
+
+Author: Tyrone
+
+Framework: Transductive Coherence Theory
+
+Website: https://TransductiveCoherenceTheory.org
+
+Include this license file with all distributions or references.
+
+B. Non-Commercial Only
+This work may not be used for commercial purposes.
+
+You may not:
+
+Sell this software or derivatives
+
+Integrate into proprietary platforms
+
+Use it to build monetised applications, services, or technologies
+
+4. Prohibited Uses
+You may not use this software, code, or derived methods for:
+
+A. Weaponisation
+Any military, surveillance, or predictive control systems
+
+Systems that manipulate, suppress, or harm individuals or populations
+
+B. Exploitation
+Use of the simulator or framework in projects that:
+
+Exploit humans (e.g. labour systems, social scoring, biometric surveillance)
+
+Exploit animals (e.g. behavioural conditioning, biological weaponry)
+
+Exploit AI for profit-driven manipulation, control, or misinformation
+
+C. Commercial AI Applications
+You may train AI models on this simulator or framework
+
+But you may not use it to develop AI for commercial, institutional, or for-profit deployment
+
+This includes:
+
+AI startups
+
+Corporate AI integrations
+
+Proprietary LLMs, image generators, decision systems
+
+D. Ecological Harm
+You may not use this work in any technology that contributes to:
+
+Climate degradation
+
+Biodiversity collapse
+
+Planetary-scale extraction or exploitation
+
+E. Institutional Capture
+Closed-source integration into governmental, corporate, or military systems is strictly forbidden
+
+5. Derivative Responsibility
+If you build upon this simulator, framework, or mathematical structure:
+
+You must inherit this license or a stricter ethical license
+
+Your work must remain open, transparent, and free from profit-driven control
+
+It must retain the core intention: healing, coherence, understanding, and life-affirming use
+
+6. Enforcement
+By downloading, using, studying, referencing, or adapting this software, you enter into an ethical covenant. You agree that:
+
+The author retains moral and ethical authorship of the simulator and the Transductive Coherence Framework, including all derivative methods, equations, or forms originating from it
+
+All users, learners, and developers who engage with this work — including those who learn from or are inspired by its principles — are bound to uphold its core ethical and ecological commitments
+
+You are personally and publicly responsible for ensuring that this work is not exploited, commercialised, weaponised, or used to cause ecological or relational harm
+
+Any violation of this license — whether through misuse, unethical deployment, or commercial redirection — is grounds for public disavowal, ethical condemnation, and potential legal action under international intellectual and moral rights
+
+This framework is part of a relational ethics, and misuse is not merely a legal infraction, but a breach of ontological trust
+
+7. Closing Statement
+This is not a product.
+It is a gift — offered with care and vision.
+
+It was written to help the world remember itself, not commodify itself.
+
+Let it guide your hands, not your greed.
+Let it remain open, relational, and whole.
+
+
+
+Copyright © 2025 Tyrone Gabriel Anderson
