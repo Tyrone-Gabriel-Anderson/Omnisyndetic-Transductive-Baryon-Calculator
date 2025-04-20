@@ -88,7 +88,7 @@ These papers detail the mathematical logic of identity recursion, the emergence 
 
 ---
 
-## 🛠️ Using the Calculator
+## Using the Calculator
 
 1. Clone this repository locally
 2. Open the Unity project or run the included WebGL build
@@ -159,9 +159,9 @@ r_cloud | Charge Radius | Spatial echo of incomplete identity | r = r₀ × (1 +
 These are not secondary effects — they are the **first expressions of identity** in space.
 
 
-## 🎥 Tutorials & Walkthroughs
+## Tutorials & Walkthroughs
 
-Complete visual walkthroughs will be available soon on **[Your YouTube Channel]**, along with:
+Complete visual walkthroughs will be available soon on ****, along with:
 
 - Use-case examples  
 - Theory-explainer videos  
