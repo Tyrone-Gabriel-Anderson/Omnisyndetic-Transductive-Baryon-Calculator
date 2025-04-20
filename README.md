@@ -1,4 +1,4 @@
-# Transductive Relational Calculator: Baryonic Identity Simulator  
+# Omnisyndetic-Transductive-Coherence: Relational Baryonic Identity Calculator  
 ### Geometry-Based Simulation of Mass, Charge, and Collapse
 
 This repository contains the **first official implementation** of the Transductive Relational Calculators — a series of geometric physics tools developed as part of the Omnisyndetic Framework. This initial release simulates the formation, stability, and collapse of **baryonic identity** from first geometric principles — using only deviation from perfect closure as its input.
