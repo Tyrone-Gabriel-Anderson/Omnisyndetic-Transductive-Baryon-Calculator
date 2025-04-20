@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 24140854}
   - component: {fileID: 24140857}
   - component: {fileID: 24140855}
+  - component: {fileID: 24140859}
   m_Layer: 0
   m_Name: Calculator Control Object
   m_TagString: Untagged
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   simulator: {fileID: 24140857}
   pointPrefab: {fileID: 5540553070691776686, guid: 40827e1e1c34dbb4f8d5751cbbcf424c, type: 3}
-  identityEchoPrefab: {fileID: 5540553070691776686, guid: 47d623110bc507349b39cc1e843f7db5, type: 3}
+  identityEchoPrefab: {fileID: 5540553070691776686, guid: 5cd1b9cbedccd6440a248ffde83b0120, type: 3}
   decayHaloPrefab: {fileID: 5540553070691776686, guid: 1602ea523e6898544998cd4a081d4bdc, type: 3}
   echonexMaterial: {fileID: 2100000, guid: c273793a936375844917540c9a88e1a5, type: 2}
   chargeCloudEffect: {fileID: 1753319963}
@@ -198,6 +199,18 @@ MonoBehaviour:
   debugOutputText: {fileID: 0}
   lambdaInputField: {fileID: 1075017309}
   closureInputField: {fileID: 286450821}
+--- !u!114 &24140859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24140851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891fee02e74204e47985184783a838a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &52376449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1962,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1.1254
   m_WholeNumbers: 0
-  m_Value: 0.46549
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2255,7 +2268,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 24140854}
@@ -2783,8 +2796,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

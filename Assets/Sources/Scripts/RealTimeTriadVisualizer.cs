@@ -92,7 +92,7 @@ public class RealTimeTriadVisualizer : MonoBehaviour
         }
 
         // --- Update dependent visuals ---
-        UpdateChargeCloud(simulator.chargeCloudRadius, simulator.totalMass > 0f);
+        UpdateChargeCloud((float)simulator.chargeCloudRadius, simulator.totalMass > 0f);
         UpdatePointParticles(coherence);
     }
 
@@ -113,7 +113,7 @@ public class RealTimeTriadVisualizer : MonoBehaviour
             posArray[i] = points[i].transform.position;
 
             // Assign coherence (drives particle visualiser)
-            points[i].GetComponent<TransductiveCoherenceParticles>().SetCoherence(simulator.coherence);
+            points[i].GetComponent<TransductiveCoherenceParticles>().SetCoherence((float)simulator.coherence);
         }
 
         return posArray;

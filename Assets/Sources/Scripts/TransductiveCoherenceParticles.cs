@@ -91,7 +91,7 @@ public class TransductiveCoherenceParticles : MonoBehaviour
     /// </summary>
     public void SetCoherence(float c)
     {
-        float k = 2f; // curve steepness
+        float k = c + c * c * c * c * c; // curve steepness
         coherence = 1f - Mathf.Exp(-c * k); // sigmoid curve for perceptual balance
     }
 

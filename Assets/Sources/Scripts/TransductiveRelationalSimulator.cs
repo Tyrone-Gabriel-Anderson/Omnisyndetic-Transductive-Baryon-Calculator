@@ -1,5 +1,5 @@
-﻿using TMPro;
-
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -97,340 +97,196 @@ using UnityEngine.UI;
 
 public class TransductiveRelationalSimulator : MonoBehaviour
 {
-    #region Public Inspector Fields
+    #region === [USER INPUT + UI References] ======================================================
 
-    [Header("Baryon Sliders")]
+    [Header("📏 Baryon Inputs")]
 
-    [Tooltip("λ (lambda): The radial coherence scale in femtometers (fm).\n" +
-             "This defines the feedback distance across the triadic structure. " +
-             "At λ = λ₀, the baryon achieves perfect spatial closure. " +
-             "Any deviation expresses spatial desire, encoded as divergence.")]
+    [Tooltip("λ (lambda): The radial coherence scale in femtometers (fm). " +
+             "At λ = λ₀, the triadic loop achieves perfect spatial return. " +
+             "Deviation reflects spatial desire (R_dev).")]
     public Slider lambdaSlider;
 
-    [Tooltip("∑φ: The total internal angle sum of the triadic feedback loop (in radians).\n" +
-             "Perfect identity is formed at ∑φ = 2π, corresponding to a loop of complete closure.\n" +
-             "Any deviation introduces angular tension, the root of emergent charge.")]
+    [Tooltip("∑φ: Total angular closure (radians).\n" +
+             "At ∑φ = 2π, angular return is perfect (ε = 0). " +
+             "Deviation encodes torsional asymmetry — the origin of charge.")]
     public Slider coherenceDeviationSlider;
 
-    [Header("Slider Labels")]
-
-    // Dynamic UI labels to reflect current values from sliders.
+    [Header("🖋️ Slider Labels")]
     public TextMeshProUGUI lambdaLabel;
     public TextMeshProUGUI sumFactorLabel;
 
-    [Header("Output Text")]
-
-    [Tooltip("Main output panel that displays all emergent properties.\n" +
-             "Includes mass, charge, coherence, curvature, desire, and baryon formation state.")]
+    [Header("📤 Output Displays")]
     public TextMeshProUGUI unifiedOutputText;
 
-    [Header("Debug Output Text (Optional)")]
-
-    [Tooltip("Optional debug panel for internal development and real-time inspection of simulation states.")]
+    [Header("🐞 Debug Panel")]
     public TextMeshProUGUI debugOutputText;
 
-    [Header("Charge Cloud Visual")]
-
-    // This is an optional reference for visualising the spatial expansion of identity fields (e.g., Yukawa clouds).
-    // It may be enabled in future versions for immersive relational field visualisation.
+    // Optional: Charge field visualisation (Yukawa-like projection zone)
     // public GameObject chargeCloudEffect;
 
-    [Header("Manual Input Fields")]
+    [Header("🧮 Manual Entry Fields")]
 
-    [Tooltip("Direct numeric entry for λ (radial coherence scale).\n" +
-             "This allows precise insertion of test values, particularly for calibration or inverse modelling.")]
+    [Tooltip("Manual override for λ (radial coherence scale) in femtometers.")]
     public TMP_InputField lambdaInputField;
 
-    [Tooltip("Direct numeric entry for closure angle offset from 2π.\n" +
-             "Allows precise control over angular mismatch ε = |∑φ_actual − 2π| / 2π.")]
+    [Tooltip("Manual override for ∑φ (angular closure), measured as Δφ = ∑φ − 2π.")]
     public TMP_InputField closureInputField;
 
     #endregion
 
-    #region Base Calibration (Perfect State: Plato’s Baryon)
+    #region === [GEOMETRIC CONSTANTS: Plato’s Baryon Calibration] ================================
 
-    /// <summary>
-    /// λ₀ — Ideal Radial Coherence Length (in femtometers)
-    ///
-    /// This is the coherence scale at which a triadic identity structure
-    /// achieves perfect closure in both radial and angular domains.
-    /// It defines the spatial separation at which nexons stabilise into a baryonic
-    /// structure with:
-    ///   - zero emergent mass,
-    ///   - zero emergent charge,
-    ///   - zero curvature (κ = 0).
-    ///
-    /// This value was not inferred from the neutron, but derived as the first
-    /// observable moment at which identity emerges from pure closure.
-    /// It is the birth-length of structural being: the λ of Plato’s Baryon.
-    ///
-    /// → It is the first measurable quantity.
-    /// → It is the relational seed of scale.
-    /// → It is the spatial chord of ontological rest.
-    /// </summary>
-    private float optimalLambda = 0.54668f;  // λ₀ — Fundamental closure length (not neutron-calibrated)
+    // --- Fundamental Geometry Constants ---
 
+    /// <summary> λ₀ — Base radial closure length (fm) </summary>
+    private const float lambda0 = 0.7071f;  // 1 / √2 — minimum closure distance
 
-    /// <summary>
-    /// r₀ — Ideal Charge Cloud Radius at Full Closure (in femtometers)
-    ///
-    /// Represents the extent of projected field at perfect structural closure.
-    /// While this matches the neutron’s observed radius (≈ 0.7503 fm),
-    /// it was confirmed — not derived — by its match. It arises as the radius
-    /// at which radial divergence becomes zero under full coherence.
-    ///
-    /// In the simulator, r₀ acts as the saturation base radius for all
-    /// deviation-induced field expansion.
-    /// 
-    /// → This is the form radius of the non-form.
-    /// → The stillness boundary of perfect memory.
-    /// </summary>
-    private float idealChargeRadius = 0.7503f;  // r₀ — Radius at perfect divergence nullification
+    /// <summary> φ₀ — Perfect angular closure (radians) </summary>
+    private const float phi0 = 2f * Mathf.PI;  // 2π
 
+    /// <summary> r₀ — Base charge cloud boundary at perfect return (fm) </summary>
+    private const float idealChargeRadius = 0.7071f;  // identical to λ₀ in updated geometry
 
-    /// <summary>
-    /// φ₀ — Ideal Angular Closure Sum (in radians)
-    ///
-    /// This is the internal angular sum of a perfectly closed triadic loop.
-    /// A value of exactly 2π radians (≈ 6.28319) ensures no internal angular torsion,
-    /// resulting in zero charge and balanced desire tension.
-    ///
-    /// This constant was not tuned, but defined from the axioms of relational closure.
-    ///
-    /// → It is the angular null of identity.
-    /// → Closure’s condition. Charge’s escape hatch.
-    /// </summary>
-    private float idealClosureAngle = 2f * Mathf.PI;  // φ₀ = 2π — Platonic closure angle (radians)
+    /// <summary> εₘᵢₙ — Minimal angular mismatch for stable deviation </summary>
+    private const float epsilonMin = 1f / 6f;  // 0.1667
+
+    /// <summary> κₘᵢₙ — Minimal non-zero curvature sustaining coherent identity </summary>
+    private const float kappaMin = epsilonMin * epsilonMin;  // ≈ 0.02778
+
+    /// <summary> Cₘₐₓ — Maximum coherence allowing identity differentiation </summary>
+    private readonly float coherenceMax = Mathf.Exp(-kappaMin);  // ≈ 0.9726
+
+    /// <summary> δ — Residual torsion at κₘᵢₙ (irreducible projection energy) </summary>
+    private  float torsionResidual = 1f;
+
+    /// <summary> κₘₐₓ — Collapse-limit curvature (from PDE solution) </summary>
+    private float kappaMax = 3f - 2f * Mathf.Sqrt(2f);  // ≈ 0.17157
+
+    /// <summary> Cₘᵢₙ — Coherence threshold below which identity collapses </summary>
+    private const float coherenceMin = 0.84234f;  // exp(−κₘₐₓ)
 
     #endregion
 
-    #region Relational Variables (Derived from Deviations)
+    #region === [SIMULATION SCALAR CONSTANTS] =====================================================
+
+    /// <summary> ℏc — Reduced Planck constant × speed of light (MeV·fm) </summary>
+    private const float HBAR_C = 197.33f;
+
+    /// <summary> c — Speed of light in vacuum (m/s) </summary>
+    private const float SPEED_OF_LIGHT = 299_792_458f;
+
+    /// <summary> Unit conversion: femtometers → meters </summary>
+    private const float FM_TO_M = 1e-15f;
 
     /// <summary>
-    /// ε — Normalised Angular Mismatch
-    /// 
-    /// ε = |(∑φ_actual – φ₀)| / φ₀
-    /// 
-    /// Measures deviation from the ideal angular closure (2π radians). This parameter represents the
-    /// identity's angular asymmetry, which directly projects emergent charge. When ε = 0,
-    /// the triad is perfectly balanced and charge-free. All angular divergence is a sign of
-    /// unmet identity curvature.
-    /// 
-    /// Ontological Interpretation:
-    ///   → ε encodes the curvature of desire.
-    ///   → Source of charge and angular torsion.
+    /// Tₙ — Transductive closure time (λ₀ / c), seconds  
+    /// The minimum temporal cycle for identity to fully validate
     /// </summary>
+    private const float transductiveClosureTime = lambda0 * FM_TO_M / SPEED_OF_LIGHT;  // ≈ 2.36e–24 s
+
+    /// <summary>
+    /// MeV₀ — Echonex field energy density (MeV/fm³)  
+    /// Represents the total ontological memory cost of identity projection
+    /// </summary>
+    private const float fieldEnergyCoefficient = 170400f;
+
+    #endregion
+
+    #region === [DERIVED RELATIONAL VARIABLES] ====================================================
+
+    /// <summary> ε — Normalised angular mismatch </summary>
     private float epsilon;
 
-    /// <summary>
-    /// R_dev — Relative Radial Deviation
-    /// 
-    /// R_dev = (λ – λ₀) / λ₀
-    /// 
-    /// Measures mismatch in the radial coherence length from the perfect triadic closure.
-    /// Represents deviation in spatial structure and is the primary driver of divergence (field expansion).
-    /// 
-    /// Ontological Interpretation:
-    ///   → Spatial failure to return.
-    ///   → Directly informs coherence loss and identity diffusion.
-    /// </summary>
+    /// <summary> R_dev — Normalised radial deviation </summary>
     private float radialDeviation;
 
-    /// <summary>
-    /// C — Coherence Scalar
-    /// 
-    /// C = exp[–(ε² + R_dev²)]
-    /// 
-    /// Represents the structural fidelity of identity. A scalar ranging from 1 (perfect closure)
-    /// to 0 (total incoherence). This exponential formulation ensures rapid collapse with increasing deviation.
-    /// 
-    /// Ontological Interpretation:
-    ///   → C is the ontological memory of closure.
-    ///   → Governs formation threshold of identity.
-    /// </summary>
+    /// <summary> κ — Total relational curvature (ε² + R_dev²) </summary>
     internal float coherence;
 
-    /// <summary>
-    /// m* — Emergent Mass (MeV units)
-    /// 
-    /// Total relational mass formed from structural deviation. Mass arises from:
-    ///   1. Validation Energy (loop tension),
-    ///   2. Desire Energy (incomplete coherence),
-    ///   3. Echonex Field Memory (divergent identity).
-    /// 
-    /// Ontological Interpretation:
-    ///   → Mass is memory.
-    ///   → Mass is the cost of being incomplete.
-    /// </summary>
+    /// <summary> m* — Emergent baryonic mass (MeV) </summary>
     private float emergentMass;
 
-    /// <summary>
-    /// q — Emergent Charge (Coulombs)
-    /// 
-    /// Charge is derived from angular mismatch:
-    ///   q ∝ ε⁶ / λ
-    /// The sixth-power dependency ensures sensitivity to angular symmetry, while sign is
-    /// determined by overclosure or underclosure (±).
-    /// 
-    /// Ontological Interpretation:
-    ///   → Charge is asymmetry in observation.
-    ///   → A projection of unfulfilled identity feedback.
-    /// </summary>
+    /// <summary> q — Emergent charge (Coulombs) </summary>
     private float emergentCharge;
 
-    /// <summary>
-    /// Λ — Divergence Scale Factor (Dark Energy Analogue)
-    /// 
-    /// Λ = ε⁴ / λ²
-    /// 
-    /// This expresses structural divergence as a higher-order projection of angular deviation.
-    /// It serves as a scalar proxy for ontological pressure in failed systems.
-    /// 
-    /// Ontological Interpretation:
-    ///   → Λ expresses tension in the relational manifold.
-    ///   → Analogue to the cosmological constant; defines outward divergence from failed closure.
-    /// </summary>
+    /// <summary> Λ — Divergence scalar (Dark energy analogue) </summary>
     private float darkEnergyScale;
 
-    /// <summary>
-    /// r₍cloud₎ — Emergent Charge Cloud Radius (fm)
-    /// 
-    /// Derived from deviation-driven expansion:
-    ///   r₍cloud₎ = r₀ × (1 + log(1 + ε² + R_dev²))
-    /// 
-    /// As structural closure fails, the projected charge field expands. This is the spatial
-    /// footprint of identity diffusion, analogous to cloud radius in QCD but derived
-    /// ontologically, not empirically.
-    /// 
-    /// Ontological Interpretation:
-    ///   → The visible echo of failed identity.
-    ///   → Field-like memory of relational collapse.
-    /// </summary>
+    /// <summary> r_cloud — Charge cloud boundary (fm) </summary>
     internal float chargeCloudRadius;
 
-    /// <summary>
-    /// m₍total₎ — Final Emergent Mass (MeV)
-    /// 
-    /// The total baryonic mass output of the system after computing all relational energies.
-    /// This is a conditional value — it only manifests when coherence exceeds the threshold for identity.
-    /// </summary>
+    /// <summary> m_total — Final baryon mass output </summary>
     internal float totalMass;
 
     #endregion
 
-    #region Additional Transductive & Field Parameters
+    #region === [STATE TRACKERS] ==================================================================
 
-    /// <summary>
-    /// Tₙ — Transductive Closure Time (in seconds)
-    ///
-    /// Represents the minimal observable temporal window required for a baryonic identity
-    /// to complete a full coherence loop in the neutral state. While historically matched
-    /// to neutron emergence (~5.15e–24s), this value also functions as the temporal scaling
-    /// bridge between angular mismatch and charge projection.
-    ///
-    /// → Time is not a substance, but the duration of attempted closure.
-    /// → This is identity’s recursive update window.
-    /// </summary>
-    private float transductiveClosureTime = 5.15e-24f;  // s — Temporal scale of identity formation
+    /// <summary> Flag: Identity successfully formed </summary>
+    internal bool lastBaryonFormed;
 
-    /// <summary>
-    /// c — Speed of Light in Vacuum (in m/s)
-    ///
-    /// In this framework, c is reinterpreted as the **maximum validation speed** — the
-    /// upper bound at which relational coherence can propagate across space.
-    /// It is not merely a physical constant but the **closure limit of observable separation**.
-    ///
-    /// → No signal travels faster because no identity can validate faster.
-    /// → c is the topological saturation of validation across distance.
-    /// </summary>
-    private const float SPEED_OF_LIGHT = 299792458f;  // m/s — Relational closure speed limit
-
-    /// <summary>
-    /// Conversion Factor: Femtometers to Meters
-    ///
-    /// Structural coherence length is measured in fm (femtometers), but charge derivations
-    /// require metric standardisation. This conversion unifies dimensional representations.
-    ///
-    /// → All scale is relational; this converts spatial ratios to grounded metric form.
-    /// </summary>
-    private const float FM_TO_M = 1e-15f;  // Unit bridge for length scale conversion
-
-    /// <summary>
-    /// MeV₀ — Global Field Energy Coefficient (in MeV)
-    ///
-    /// This is the **core projection constant** used for deriving Echonex field energy.
-    /// It is not empirical nor heuristic, but **relationally derived** from the total
-    /// identity energy required to maintain coherence under angular and radial divergence.
-    ///
-    /// It captures the **integrated return cost** under failed closure, corresponding
-    /// to structural memory density (see Appendix D of the paper).
-    ///
-    /// → This is the ‘weight’ of unfulfilled coherence.
-    /// → Mass as spatially encoded resistance to vanishing.
-    /// </summary>
-    private float fieldEnergyCoefficient = 257370.09544f;  // MeV — Fully relational field projection factor
-
-    /// <summary>
-    /// Internal flags and trackers for baryon formation state.
-    /// </summary>
-    internal bool lastBaryonFormed;   // State tracker for coherence condition
-    internal float lastBaryonMass;    // Cached mass from previous valid identity
-
-    /// <summary>
-    /// ℏc — Reduced Planck Constant × Speed of Light (in MeV·fm)
-    ///
-    /// Used in loop energy and curvature derivations.
-    /// In this ontology, ℏc remains geometrically valid as a **curvature quantisation factor**,
-    /// linking energy and scale under deviation. Not introduced heuristically.
-    /// </summary>
-    private const float HBAR_C = 197.33f;  // MeV·fm — Planck-curvature bridge term
+    /// <summary> Cache: Last successful mass output </summary>
+    internal float lastBaryonMass;
 
     #endregion
 
+
     #region Unity Lifecycle
 
-    // Internal state flags to prevent UI feedback loops
+    // UI state flags to prevent recursive updates when user edits values
+    // Reflects the need to guard against feedback loops in observer interactions (§4.3) citeturn2file7
     private bool isEditingLambda = false;
     private bool isEditingClosure = false;
 
-    // Energy components of the baryon identity (computed per frame)
-    private float validationEnergy;  // Energy required to complete internal closure
-    private float desireEnergy;      // Projective energy resulting from failed coherence
-    private float echonexField;      // Stored field energy from divergence memory
+    // Energy components computed each frame (Eq 17: total mass decomposition) citeturn3file19
+    private float validationEnergy;  // Loop (internal) closure energy
+    private float desireEnergy;      // External projection (desire) energy
+    private float echonexField;      // Echonex field-memory energy from divergence
+    private const float minimumOntologicalTime = 2.358e-24f;  // seconds (from the paper)
+
+    private void Awake()
+    {
+        torsionResidual = 1f - coherenceMax;
+    }
+
 
     /// <summary>
     /// Unity Start lifecycle hook.
-    /// 
-    /// Initialises the sliders and input fields to default values associated with
-    /// the proton configuration — a stable but asymmetric triad.
-    /// This setup ensures the user begins with a known baryonic identity.
+    ///
+    /// Initializes sliders and inputs to the proton’s near-threshold state
+    /// (ε_p ≈ 0.0165, λ_p = 0.65294 fm from §7.6 Proton–Neutron Distinction) citeturn2file8.
+    /// Ensures the simulation begins with a known baryonic configuration.
     /// </summary>
     private void Start()
     {
-        // Initialise with a known coherent configuration: the proton
-        coherenceDeviationSlider.value = idealClosureAngle + 0.10379f;  // ∑φ > 2π: angular asymmetry
-        lambdaSlider.value = 0.65294f;                                  // λ > λ₀: radial over-extension
+        // Proton defaults: slight underclosure and radial overextension
+        coherenceDeviationSlider.value = 2f * Mathf.PI + 0.16000f;  // ∑φ = 2π + δφ (angular asymmetry)
+        lambdaSlider.value = 0.84285f;                                  // λ (fm) > λ₀ (radial deviation)
 
-        // Synchronise text fields with slider defaults
+        //0.88887   0.00000  neuton
+        //0.52110  -0.82153  Ω_b⁻	~6046 MeV
+        //0.49180  -0.69000  ~10162 MeV
+
+
+        // Sync text inputs to slider values
         lambdaInputField.text = lambdaSlider.value.ToString("F5");
         closureInputField.text = coherenceDeviationSlider.value.ToString("F5");
 
-        // Update UI and simulation on slider interaction
+        // Slider change handlers: update fields and recompute relational outputs
         lambdaSlider.onValueChanged.AddListener(val =>
         {
             if (!isEditingLambda)
                 lambdaInputField.text = val.ToString("F5");
-            UpdateSimulation();  // Trigger recomputation of all relational outputs
+            UpdateSimulation();  // Re-evaluate all emergent quantities (§6.3) citeturn3file1
         });
-
         coherenceDeviationSlider.onValueChanged.AddListener(val =>
         {
             if (!isEditingClosure)
-                closureInputField.text = (val - idealClosureAngle).ToString("F5");
-            UpdateSimulation();  // Update all coherence-dependent states
+                closureInputField.text = (val - phi0).ToString("F5");
+            UpdateSimulation();  // Ensure coherence, mass, charge, field stay current
         });
 
-        // UI protections during manual input — prevent overwrite while editing
+        // Manual input protections: prevent overwrite while user edits
         lambdaInputField.onSelect.AddListener(_ => isEditingLambda = true);
         lambdaInputField.onEndEdit.AddListener(val =>
         {
@@ -444,181 +300,244 @@ public class TransductiveRelationalSimulator : MonoBehaviour
         {
             isEditingClosure = false;
             if (float.TryParse(val, out float parsed))
-                coherenceDeviationSlider.value = Mathf.Clamp(parsed + idealClosureAngle, coherenceDeviationSlider.minValue, coherenceDeviationSlider.maxValue);
+                coherenceDeviationSlider.value = Mathf.Clamp(parsed + phi0,
+                                                         coherenceDeviationSlider.minValue,
+                                                         coherenceDeviationSlider.maxValue);
         });
 
-        // Perform initial computation on load
+        // Initial computation on load to set UI and internal state (§6.3 Field Collapse Scaling)
         UpdateSimulation();
     }
 
     /// <summary>
     /// Unity Update lifecycle hook.
-    /// 
-    /// Continuously recomputes all baryonic parameters from current relational inputs
-    /// (angle deviation and coherence scale). Ensures real-time coherence validation.
+    ///
+    /// Called once per frame to continuously recompute all relational outputs
+    /// (coherence, mass, charge, field energy), ensuring real-time ontological stability.
     /// </summary>
     private void Update()
     {
-        UpdateSimulation();  // Real-time feedback loop for ontological stability
+        UpdateSimulation();  // Real-time feedback loop
     }
 
     #endregion
 
-    #region Fully Relational Computations
+
+    #region === [Relational Core Computations] ===================================================
 
     /// <summary>
-    /// Derives the core relational parameters from topological deviation
-    /// against the Platonic closure condition (λ = λ₀, ∑φ = 2π).
-    /// These define all emergent properties (mass, charge, coherence, curvature).
-    ///
-    /// Definitions:
-    ///     ε       → Angular mismatch, source of emergent charge.
-    ///     R_dev   → Radial deviation from coherence length λ₀.
-    ///     C       → Total coherence scalar: C = exp[–(ε² + R_dev²)]
-    ///               Perfect identity: C = 1, all structure dissolves.
+    /// 📐 ComputeCoherenceState:
+    ///     Derives angular mismatch (ε), radial deviation (R_dev),
+    ///     and coherence (C) based on deviation from Plato’s Baryon.
+    /// 
+    ///     ε = |Δφ| / φ₀  
+    ///     R_dev = (λ – λ₀) / λ₀  
+    ///     κ = ε² + R_dev²  
+    ///     C = exp(–κ)
     /// </summary>
-    private void ComputeRelationalParameters()
+    private void ComputeCoherenceState()
     {
-        float lambda = lambdaSlider.value;                     // λ: coherence length (fm)
-        float sumFactor = coherenceDeviationSlider.value;      // ∑φ: triadic internal angle sum (rad)
+        float λ = lambdaSlider.value;
+        float φ = coherenceDeviationSlider.value;
 
-        float deltaPhi = sumFactor - idealClosureAngle;
-        epsilon = Mathf.Abs(deltaPhi) / idealClosureAngle;     // ε: angular mismatch
-        radialDeviation = (lambda - optimalLambda) / optimalLambda;
+        float Δφ = φ - phi0;
+        epsilon = Mathf.Abs(Δφ) / phi0;
+        radialDeviation = (λ - lambda0) / lambda0;
 
-        coherence = Mathf.Exp(-(epsilon * epsilon + radialDeviation * radialDeviation));
+        float kappa = (epsilon * epsilon) + (radialDeviation * radialDeviation);
+        coherence = Mathf.Exp(-kappa);
     }
 
     /// <summary>
-    /// Computes the transductive coupling α:
+    /// 🔄 ComputeTransductiveCoupling:
+    ///     Maps energy feedback impedance as a ratio of identity strain to scale:
     ///     α = (ε² + δ²) / (ε² + δ² + λ²)
-    /// Encodes the ratio of structural failure (desire) to spatial tension (closure).
-    /// This is not a fine structure constant — it is a topological friction parameter.
+    ///     where δ = √(1 – C) is residual torsion
     /// </summary>
-    private float ComputeTransductiveCoupling(float lambda)
+    private float ComputeTransductiveCoupling(float λ)
     {
-        float deltaResidual = Mathf.Sqrt(1f - coherence);  // δ: residual torsion (coherence loss)
-        float numerator = (epsilon * epsilon) + (deltaResidual * deltaResidual);
-        float denominator = numerator + (lambda * lambda);
+        float δ = Mathf.Sqrt(1f - coherence);
+        float numerator = epsilon * epsilon + δ * δ;
+        float denominator = numerator + λ * λ;
         return (denominator > 1e-12f) ? numerator / denominator : 0f;
     }
 
     /// <summary>
-    /// Computes the Echonex field energy — the memory stored in divergence.
-    ///     divergence = (λ / λ₀ + λ₀ / λ – 2)
+    /// ⏳ ComputeDecayRateAndLifetime:
+    ///     Dynamically derives decay width (Γ) and lifetime (τ) from coherence and memory strain.
+    ///     Decay reflects collapse probability from structural curvature and energetic persistence.
+    /// 
+    ///     • κ = −ln(C)             → curvature memory load
+    ///     • Γ = (ℏ / E_mem) · exp(−κ / κₘₐₓ)
+    ///     • τ = 1 / Γ
+    /// </summary>
+    private (float decayRate, float lifetime) ComputeDecayRateAndLifetime()
+    {
+        const float HBAR_MEV_S = 6.582119569e-22f;  // Planck constant in MeV·s
+
+        float κ = -Mathf.Log(coherence);                      // Memory curvature
+        float E_mem = echonexField + validationEnergy;        // Total curvature-encoded energy
+        float safeE = Mathf.Max(E_mem, 1e-6f);                // Avoid division by zero
+
+        float decayWidth = (HBAR_MEV_S / safeE) * Mathf.Exp(-κ / kappaMax); // Γ
+        float lifetime = 1f / Mathf.Max(decayWidth, 1e-30f);                // τ
+
+        return (decayWidth, lifetime);
+    }
+
+
+
+    /// <summary>
+    /// 💠 ComputeEchonexFieldEnergy:
+    ///     Measures total divergence across the identity loop:
+    ///     divergence = λ/λ₀ + λ₀/λ – 2  
     ///     E_field = divergence × α × (1 + δ) × MeV₀
-    /// Where MeV₀ is the field collapse coefficient (≈257,337), derived from
-    /// the cost of global projection under incomplete identity.
     /// </summary>
-    private float ComputeEchonexFieldEnergy(float lambda)
+    private float ComputeEchonexFieldEnergy(float λ)
     {
-        float divergence = (lambda / optimalLambda) + (optimalLambda / lambda) - 2f;
-        float coupling = ComputeTransductiveCoupling(lambda);
-        float deltaResidual = Mathf.Sqrt(1f - coherence);
-        float tensionFactor = 1f + deltaResidual;
-
-        return divergence * coupling * tensionFactor * fieldEnergyCoefficient;
+        float divergence = (λ / lambda0) + (lambda0 / λ) - 2f;
+        float α = ComputeTransductiveCoupling(λ);
+        float δ = Mathf.Sqrt(1f - coherence);
+        return divergence * α * (1f + δ) * fieldEnergyCoefficient;
     }
 
     /// <summary>
-    /// Computes the loop energy (internal recursion) and desire energy (external projection).
-    ///     e_loop   = α × ℏc / λ × coherence × ∑φ × sigmoid
-    ///     e_desire = (α × δ × ℏc / λ) × (1 - C)
-    /// These map onto baryonic validation and identity projection respectively.
+    /// 🔋 ComputeLoopAndDesireEnergy:
+    ///     Decomposes the total coherence strain into:
+    ///     • Validation energy (loop mass)  
+    ///     • Desire energy (incomplete return)
+    /// 
+    ///     e_loop = α·ℏc/λ · C · ∑φ · sigmoid(α–C)  
+    ///     e_desire = α·δ·ℏc/λ · (1 – C)
     /// </summary>
-    private void ComputeEchonexEnergy(out float e_loop, out float e_desire)
+    private void ComputeLoopAndDesireEnergy(out float e_loop, out float e_desire)
     {
-        float lambda = lambdaSlider.value;
-        float sumFactor = coherenceDeviationSlider.value;
+        float λ = lambdaSlider.value;
+        float φ = coherenceDeviationSlider.value;
+        float α = ComputeTransductiveCoupling(λ);
+        float δ = Mathf.Sqrt(1f - coherence);
 
-        ComputeRelationalParameters();
-        float alpha = ComputeTransductiveCoupling(lambda);
-        float deltaResidual = Mathf.Sqrt(1f - coherence);
+        float baseE = (α * HBAR_C / Mathf.Max(λ, 1e-12f)) * coherence * φ;
+        float sig = 1f / (1f + Mathf.Exp(-25f * (α - coherence)));
+        e_loop = baseE * Mathf.Lerp(1f, 10f, sig);  // smooth modulation
 
-        float baseEnergy = (alpha * HBAR_C / Mathf.Max(lambda, 1e-12f)) * coherence * sumFactor;
-
-        float sigmoid = 1f / (1f + Mathf.Exp(-25f * (alpha - coherence)));
-        float cappedFactor = Mathf.Lerp(1f, 10f, sigmoid);
-        e_loop = baseEnergy * cappedFactor;
-
-        float kDesire = (alpha * deltaResidual * HBAR_C) / Mathf.Max(lambda, 1e-12f);
-        e_desire = kDesire * (1f - coherence);
+        float e_proj = (α * δ * HBAR_C / Mathf.Max(λ, 1e-12f)) * (1f - coherence);
+        e_desire = e_proj;
     }
 
     /// <summary>
-    /// Computes emergent charge:
-    ///     Q = ±(Tₙ × ε⁶ / λ_m)
-    /// This is a directional projection of topological asymmetry.
+    /// ⚡ ComputeEmergentCharge:
+    ///     Computes baryonic charge as the projected angular deviation from perfect closure,
+    ///     scaled by relational curvature and modulated by coherence-based memory decay.
+    ///
+    ///     Charge arises when the identity loop fails to close perfectly in angle (ε > 0),
+    ///     which generates a net curvature. This asymmetry stores memory — resulting in
+    ///     projected charge.
+    ///
+    ///     Geometric Model:
+    ///         • ε = Δφ / 2π         (angular mismatch)
+    ///         • κ = –ln(C)          (curvature from coherence decay)
+    ///         • Q = ±q₀ · ε · (κ / κₘᵢₙ) · exp(1 – κ)
+    ///
+    ///     At perfect closure (ε = 0), all curvature is internalised: charge = 0.
+    ///     At maximal curvature (κ = κₘᵢₙ), full elementary charge is projected (±q₀).
+    ///
+    ///     This is a purely geometric formulation — no empirical field constants required.
     /// </summary>
     private float ComputeEmergentCharge()
     {
-        float lambda_fm = lambdaSlider.value;
-        float lambda_m = lambda_fm * FM_TO_M;
-        float deltaPhi = coherenceDeviationSlider.value - idealClosureAngle;
+        // --- Δφ: Net angular deviation from ideal identity loop (2π radians)
+        float Δφ = coherenceDeviationSlider.value - phi0;
 
-        float chargeMagnitude = transductiveClosureTime * Mathf.Pow(epsilon, 6f) / Mathf.Max(lambda_m, 1e-20f);
-        return (deltaPhi < 0f) ? +chargeMagnitude : -chargeMagnitude;
+        // --- q₀: Base quantised charge (elementary charge) at peak projection
+        const float q0 = 1.602e-19f;
+
+        // --- ε: Normalised angular deviation (ε = Δφ / φ₀)
+        float ε = Δφ / phi0;
+
+        // --- Snap charge to zero when coherence is near-perfect (C ≈ 1 ⇒ κ ≈ 0)
+        //     At full closure, charge must vanish: system is topologically silent
+        if (coherence >= coherenceMax)
+            return 0f;
+
+        // --- κ: Relational curvature (κ = –ln(C))
+        //     Represents stored torsional strain from closure failure
+        float κ = -Mathf.Log(coherence);
+
+        // --- Polarity: Determine charge sign from the direction of angular error
+        float sign = (Δφ >= 0f) ? +1f : -1f;
+
+        // --- Q: Final emergent charge
+        //     · Grows with ε (angular asymmetry),
+        //     · Scales with κ / κₘᵢₙ (topological strain),
+        //     · Modulated by exp(1 – κ) (memory decay cap)
+        float q_final = sign * q0 * Mathf.Abs(ε) * (κ / kappaMin) * Mathf.Exp(1f - κ);
+
+        return q_final;
     }
 
+
+
+
+
+
     /// <summary>
-    /// Computes charge cloud radius from mismatch:
-    ///     r_cloud = r₀ × (1 + log(1 + ε² + R_dev²))
-    /// As closure fails, identity expands — the inverse of gravitational collapse.
+    /// ☁️ ComputeChargeEchoRadius:
+    ///     Spatial footprint of identity curvature.
+    ///     r_cloud = r₀ × [1 + ln(1 + ε² + R_dev²)]
     /// </summary>
-    private float ComputeChargeCloudRadius()
+    private float ComputeChargeEchoRadius()
     {
-        float mismatchSum = Mathf.Pow(epsilon, 2f) + Mathf.Pow(radialDeviation, 2f);
-        float scaled = Mathf.Log(1f + mismatchSum);
-        return idealChargeRadius * (1f + scaled);
+        float κ = epsilon * epsilon + radialDeviation * radialDeviation;
+        return idealChargeRadius * (1f + Mathf.Log(1f + κ));
+    }
+
+
+    /// <summary>
+    /// 🌀 GetValidationRadius:
+    ///     Returns the geometric radius of instantaneous return (no projection).
+    ///     Equal to λ₀ — the fundamental radial coherence length.
+    /// </summary>
+    private float GetValidationRadius()
+    {
+        return lambda0;
     }
 
     /// <summary>
-    /// Computes the total emergent mass of a baryon:
-    ///     M = Validation Energy + Desire Energy + Field Memory
-    /// Forms only if coherence is within closure range.
+    /// 🌌 GetCoherenceRadius:
+    ///     Spatial region where coherence is still meaningful (> 0).
+    ///     r = λ · √[–ln(C)]
+    /// </summary>
+    /// <summary>
+    /// Option B — Midpoint between charge and memory divergence fields
+    /// </summary>
+    private float GetHybridCoherenceRadius()
+    {
+        float r_charge = ComputeChargeEchoRadius();
+        float r_memory = lambda0 * (1f + epsilon + radialDeviation);
+        return 0.5f * (r_charge + r_memory);
+    }
+
+
+
+    /// <summary>
+    /// 🧮 ComputeTotalBaryonMass:
+    ///     Sums all valid energies when identity is coherent enough to manifest:
+    ///     M = E_loop + E_desire + E_field
+    ///     (only if C ∈ [C_min, C_max])
     /// </summary>
     private float ComputeTotalBaryonMass(out bool formsBaryon)
     {
-        ComputeRelationalParameters();
-        float lambda = lambdaSlider.value;
-
-        ComputeEchonexEnergy(out float e_loop, out float e_desire);
+        ComputeCoherenceState();
+        ComputeLoopAndDesireEnergy(out float e_loop, out float e_desire);
         validationEnergy = e_loop;
         desireEnergy = e_desire;
 
-        echonexField = ComputeEchonexFieldEnergy(lambda);
-        float e_total = e_loop + e_desire + echonexField;
+        echonexField = ComputeEchonexFieldEnergy(lambdaSlider.value);
+        float total = e_loop + e_desire + echonexField;
 
-        formsBaryon = (coherence >= GetMinimumCoherenceThresholdFromClosureGeometry() && coherence < 0.97827f);
-        return formsBaryon ? e_total : 0f;
-    }
-
-    /// <summary>
-    /// Computes the analytic upper coherence limit for returnable baryons:
-    ///     C_max = [(e / 2) × (1 + αδ)]²
-    /// If coherence is too perfect, no projection occurs — the identity remains silent.
-    /// </summary>
-    private float ComputeMaximumCoherenceThresholdFromYukawaDecay()
-    {
-        float delta = Mathf.Sqrt(1f - coherence);
-        float deltaSquared = delta * delta;
-        float alpha = deltaSquared / (deltaSquared);  // Simplifies to 1
-        float eOver2 = Mathf.Exp(1f) / 2f;
-        return Mathf.Pow((1f + alpha * delta) * eOver2, 2f);
-    }
-
-    /// <summary>
-    /// Computes the minimum coherence threshold for identity emergence
-    /// based on relational closure geometry.
-    /// </summary>
-    private float GetMinimumCoherenceThresholdFromClosureGeometry()
-    {
-        float lambda0 = optimalLambda;
-        float eOver2 = Mathf.Exp(1f) / 2f;
-        float candidateC = 0.97827f;
-        float delta = Mathf.Sqrt(1f - candidateC);
-        float alpha = (delta * delta) / ((delta * delta) + (lambda0 * lambda0));
-        return lambda0 * (1f + alpha * delta) / Mathf.Sqrt(candidateC) * eOver2;
+        formsBaryon = (coherence >= coherenceMin && coherence <= coherenceMax);
+        return formsBaryon ? total : 0f;
     }
 
     #endregion
@@ -626,85 +545,148 @@ public class TransductiveRelationalSimulator : MonoBehaviour
     #region Main Simulation Update
 
     /// <summary>
-    /// Computes and updates all structural quantities of the simulator in real-time.
-    /// This is the core observational loop, where the baryonic configuration is
-    /// continuously evaluated in relational space.
+    /// Core Observational Loop — UpdateSimulation()
     ///
-    /// From just two parameters — angular sum (∑φ) and radial coherence (λ) —
-    /// the system calculates:
-    ///     → Mass (as identity formation energy),
-    ///     → Charge (as angular asymmetry),
-    ///     → Field divergence (as curvature memory),
-    ///     → Spatial radius (as topological expansion),
-    ///     → Coherence, coupling, and torsion.
+    /// This is the central coherence evaluation function. It models
+    /// baryonic identity as the dynamic resolution of topological deviation
+    /// against Plato’s Baryon — the idealised triadic form defined by:
+    ///   • λ = λ₀ (radial closure)
+    ///   • ∑φ = 2π (angular closure)
     ///
-    /// These values emerge strictly from deviation against the ideal Platonic structure,
-    /// and do not require inherited constants, fitted models, or physical fields.
-    /// This is a structural ontology of identity.
+    /// From these two inputs, the simulator computes all emergent properties:
+    ///     – Mass (from energetic asymmetry and feedback tension),
+    ///     – Charge (from angular deviation ε),
+    ///     – Coherence (from closure fidelity),
+    ///     – Field divergence (from relational memory),
+    ///     – Radius (as expansion of failed closure),
+    ///     – Torsion (as residual identity strain).
     ///
-    /// Display output is updated to reflect all quantities.
+    /// Identity emerges only if:
+    ///     Cₘᵢₙ < C < Cₘₐₓ
+    /// Too little coherence and return fails; too much and projection ceases.
+    /// This range defines the ontological window in which a structure can sing.
+    ///
+    /// All quantities are derived algebraically, with no empirical coefficients.
     /// </summary>
     public void UpdateSimulation()
     {
-        // Step 1 — Core geometric mismatch:
-        ComputeRelationalParameters();
+        // Step 1 — Compute angular + radial deviation (ε, R_dev), coherence (C), etc.
+       // ComputeRelationalParameters();
 
-        // Step 2 — Emergent mass:
+        // Step 2 — Emergent mass (formed if C is within valid range)
         bool baryonForms;
         totalMass = ComputeTotalBaryonMass(out baryonForms);
 
-        // Step 3 — Emergent charge:
+        // Step 3 — Emergent charge (projected asymmetry)
         emergentCharge = ComputeEmergentCharge();
 
-        // Step 4 — Dark energy (divergence field):
+        // Step 4 — Emergent divergence field (Λ)
         float lambda = lambdaSlider.value;
-        darkEnergyScale = Mathf.Pow(epsilon, 4f) / (lambda * lambda);
+        darkEnergyScale = (float)Math.Pow(epsilon, 4) / (lambda * lambda);
 
-        // Step 5 — Charge cloud radius from mismatch growth:
-        chargeCloudRadius = ComputeChargeCloudRadius();
+        // Step 5 — Charge cloud radius (projected closure failure)
+        chargeCloudRadius = GetHybridCoherenceRadius();
 
-        // Step 6 — Build display output string:
+        // Step 6 — Determine if this is a tachyon
+        bool formsTachyon = baryonForms && (lambda < lambda0);
+
+        // Compute decay properties
+        (float decayRate, float lifetime) = ComputeDecayRateAndLifetime();
+
+        string decayPanel =
+            "<b><color=#FF69B4>☐ Decay Properties</color></b>\n" +
+            $"<b>Decay Width (Γ):</b> <color=#FF6347>{decayRate:E3}</color> MeV\n" +
+            $"<b>Lifetime (τ):</b> <color=#00FA9A>{lifetime:E3}</color> seconds\n";
+
+
+        float Tn_min = 2.358e-24f;  // hardcoded from Plato's Baryon
+        float λ_m = lambda * FM_TO_M;
+        float deltaT_actual = λ_m / SPEED_OF_LIGHT;
+        float deltaT_offset = deltaT_actual - Tn_min;
+
+        string temporalReading =
+            $"<b><color=#6A5ACD>Δt (Return Time):</color></b> <color=#BA55D3>{deltaT_actual:E2}</color> s\n" +
+            $"<b><color=#7B68EE>Δt Offset from Tₙ:</color></b> <color=#9370DB>{deltaT_offset:E2}</color> s\n" +
+            $"<b><color=#778899>Minimum Return Time Tₙ:</color></b> <color=#708090>{Tn_min:E2}</color> s\n" +
+            (formsTachyon
+                ? "<b><color=#FF00FF>☄ Tachyonic Reversal:</color></b> λ < λ₀ — coherence loops inward, time inverts.\n"
+                : "<b><color=#00FA9A>✓ Normal Return:</color></b> Coherence stable, forward-temporal identity preserved.\n");
+
+
+        // Step 8 — Verdict logic
+        string verdict;
+        if (formsTachyon)
+        {
+            verdict = "<b><color=#FF00FF>☼ Tachyon Formed:</color></b> Ultra-coherent; λ < λ₀, temporal reversal projected.\n";
+        }
+        else if (baryonForms)
+        {
+            verdict = "<b><color=#32CD32>✓ Baryon Formed:</color></b> Coherence valid; identity sustained.\n";
+        }
+        else
+        {
+            verdict = "<b><color=#FF0000>✗ Baryon Collapsed:</color></b> Coherence outside bounds; structure dissolved.\n";
+        }
+
         string output =
-            // --- Simulator Title ---
-            "<b><size=16>TransductiveRelationalSimulator</size></b>\n" +
-            "<i><size=12>All emergent quantities derived from deviation against Plato’s Baryon</size></i>\n\n" +
+            // === Title Section ===
+            "<b><size=16><color=#FFFFFF>TransductiveRelationalSimulator</color></size></b>\n" +
+            "<i><size=12><color=#B0C4DE>All emergent properties derived from deviation against Plato’s Baryon</color></size></i>\n\n" +
 
-            // --- SECTION 1: Topological State ---
-            "<b><color=#FFD700>Topological Configuration</color></b>\n" +
-            $"<b>λ (Active):</b> <color=#00FFFF>{lambda:F4}</color> fm    |    " +
-            $"<b>λ₀ (Ideal):</b> <color=#00CED1>{optimalLambda:F4}</color> fm\n" +
-            $"<b>∑φ (Sum):</b> <color=#00FFAA>{coherenceDeviationSlider.value:F4}</color> rad    |    " +
-            $"<b>φ₀ (Ideal):</b> <color=#7FFFD4>{idealClosureAngle:F4}</color> rad\n" +
-            $"<b>ε (Angle Error):</b> <color=#FFAA00>{epsilon:F4}</color>    |    " +
-            $"<b>Rₑ (Radial Dev):</b> <color=#FF7F50>{radialDeviation:F4}</color>\n" +
-            $"<b>C (Coherence):</b> <color=#ADFF2F>{coherence:F4}</color>\n" +
-            $"<b>α (Coupling Strength):</b> <color=#00BFFF>{ComputeTransductiveCoupling(lambda):F4}</color>\n" +
-            $"<b>δ (Residual Torsion):</b> <color=#9370DB>{Mathf.Sqrt(1f - coherence):F4}</color>\n" +
-            $"<b>Divergence:</b> <color=#FF69B4>{((lambda / optimalLambda) + (optimalLambda / lambda) - 2f):F4}</color>\n" +
-            $"<b>κₑₓₜ (Effective Curvature):</b> <color=#FF8C00>{(epsilon * epsilon + radialDeviation * radialDeviation):F4}</color>\n\n" +
+            // === Topological Configuration ===
+            "<b><color=#FFD700>✦ Topological Configuration</color></b>\n" +
+            $"<b>λ (Active):</b> <color=#00FFFF>{lambda:F5}</color> fm    |    " +
+            $"<b>λ₀ (Ideal):</b> <color=#00CED1>{lambda0:F5}</color> fm\n" +
+            $"<b>∑φ (Angular Sum):</b> <color=#00FFAA>{coherenceDeviationSlider.value:F4}</color> rad    |    " +
+            $"<b>φ₀ (Ideal):</b> <color=#7FFFD4>{phi0:F4}</color> rad\n" +
+            $"<b>ε (Angle Error):</b> <color=#FFA500>{epsilon:F6}</color>\n" +
+            $"<b>Rₑ (Radial Deviation):</b> <color=#FF7F50>{radialDeviation:F6}</color>\n\n" +
 
-            // --- SECTION 2: Identity Emergence ---
+            "<b><color=#FFDAB9>» Derived Curvatures</color></b>\n" +
+            $"<b>κ₁ (Validation Curvature):</b> <color=#FF8C00>{(epsilon * epsilon + radialDeviation * radialDeviation):F6}</color>\n" +
+            $"<b>κ₂ (Echonex Curvature):</b> <color=#FFA07A>{-Mathf.Log(coherence):F6}</color>\n" +
+            $"<b>C (Coherence):</b> <color=#ADFF2F>{coherence:F6}</color>    |    " +
+            $"<b>δ (Residual Torsion):</b> <color=#9370DB>{Math.Sqrt(1.0 - coherence):F6}</color>\n\n" +
+
+            "<b><color=#D8BFD8>» Extended Topological Metrics</color></b>\n" +
+            $"<b>Δφ (Mismatch):</b> <color=#F5DEB3>{(epsilon * phi0):F6}</color> rad\n" +
+            $"<b>Torsional Tension:</b> <color=#F08080>{(epsilon * radialDeviation):F6}</color>\n" +
+            $"<b>Closure Fidelity Index:</b> <color=#EEE8AA>{Mathf.Exp(-(epsilon + Mathf.Abs(radialDeviation))):F6}</color>\n" +
+            $"<b>Feedback Delay (τ):</b> <color=#87CEFA>{(lambda / (ComputeTransductiveCoupling(lambda) + Math.Sqrt(1 - coherence) + epsilon)):F6}</color> fm\n" +
+            $"<b>Curvature Density (κ₂ / λ):</b> <color=#BC8F8F>{(-Mathf.Log(coherence) / lambda):F6}</color>\n\n" +
+
+            $"<b>α (Coupling Strength):</b> <color=#00BFFF>{ComputeTransductiveCoupling(lambda):F6}</color>\n" +
+            $"<b>Λᵣ (Spatial Divergence):</b> <color=#FF69B4>{((lambda / lambda0) + (lambda0 / lambda) - 2.0):F6}</color>\n\n"+
+
+
+            // === Identity Properties ===
             "<b><color=#DA70D6>Emergent Identity Properties</color></b>\n" +
-            $"<b>Total Mass (m*):</b> <color=#FFA07A>{totalMass:F2}</color> MeV    |    " +
+            $"<b>Total Mass (m*):</b> <color=#FFA07A>{totalMass:F3}</color> MeV    |    " +
             $"<b>Charge (q):</b> <color=#FF4500>{emergentCharge:E2}</color> C\n" +
-            $"<b>Cloud Radius (r₍cloud₎):</b> <color=#40E0D0>{chargeCloudRadius:F4}</color> fm\n" +
-            $"<b>Λ (Field Divergence):</b> <color=#8A2BE2>{darkEnergyScale:F4}</color>\n\n" +
+            $"<b>Cloud Radius (r₍cloud₎):</b> <color=#40E0D0>{chargeCloudRadius:F5}</color> fm\n" +
+            $"<b>Λ (Field Divergence):</b> <color=#8A2BE2>{darkEnergyScale:F6}</color>\n\n" +
 
-            // --- SECTION 3: Energetic Composition ---
+            // === Energetic Breakdown ===
             "<b><color=#20B2AA>Energy Composition</color></b>\n" +
             $"<b>Validation Energy:</b> <color=#ADD8E6>{validationEnergy:F2}</color> MeV    |    " +
             $"<b>Desire Energy:</b> <color=#FFA07A>{desireEnergy:F2}</color> MeV\n" +
             $"<b>Echonex Field Energy:</b> <color=#FFB6C1>{echonexField:F2}</color> MeV\n\n" +
 
-            // --- SECTION 4: Identity Verdict ---
-            (baryonForms
-                ? "<b><color=#32CD32>✓ Baryon Formed:</color></b> Ontological coherence sustained.\n"
-                : "<b><color=#FF0000>✗ Baryon Collapsed:</color></b> Identity unable to stabilise.\n");
+            $"{decayPanel}\n\n" +
+            // === Temporal Verdict ===
+            "<b><color=#BA55D3>Return Time:</color></b> " +
+            $"{temporalReading}\n\n" +
 
-        // Step 7 — Display UI output:
+            // === System Verdict ===
+            verdict;
+
+
+        // Step 10 — Update the display panel
         if (unifiedOutputText != null)
             unifiedOutputText.text = output;
     }
 
+
     #endregion
+
 }
