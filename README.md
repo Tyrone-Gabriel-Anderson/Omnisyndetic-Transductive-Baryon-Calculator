@@ -8,7 +8,7 @@ Only curvature, coherence, and return.
 
 ---
 
-## 📘 Scope of This Tool
+## Scope of This Tool
 
 This release models the baryonic triad only — the minimal structure capable of recursive identity under the Omnisyndetic ontology. It simulates:
 
@@ -27,7 +27,7 @@ This is **Calculator 1** in the full toolchain. Future calculators will address:
 
 ---
 
-## 🔬 What This Simulator Does
+## What This Simulator Does
 
 For any triadic configuration (3-relational structure), this simulator computes:
 
@@ -55,7 +55,7 @@ For any triadic configuration (3-relational structure), this simulator computes:
 
 ---
 
-## 🌀 Ontological Basis
+##  Ontological Basis
 
 This simulator does **not** use:
 
@@ -76,15 +76,13 @@ C = e^{-\kappa}
 
 ---
 
-## 🧠 Research Context
+##  Research Context
 
-This simulator was developed independently by **[Your Name]** and is based on the ontological and mathematical structure presented in:
+This calculator, framework and all equations derived were developed independently by **Tyrone Gabriel Anderson** and is based on the ontological and mathematical structure presented in:
 
-- 📘 “From Closure to Mass: A Relational Reformulation of Baryonic Structure”  
-  https://zenodo.org/records/10807719
+Tyrone Gabriel Anderson. (2025). Principia Transductiva: The Axioms of Relational Coherence in the Omnisyndetic Framework. Zenodo. https://doi.org/10.5281/zenodo.15213184
 
-- 📗 “Quantum Gravity from Relational Curvature”  
-  https://zenodo.org/records/10910267
+Tyrone Gabriel Anderson. (2025). The Geometry of Observation: Defining the Fundamental Shapes of Transductive Coherence in the Omnisyndetic Framework. Zenodo. https://doi.org/10.5281/zenodo.15211376
 
 These papers detail the mathematical logic of identity recursion, the emergence of physical quantities from relational deviation, and the reformulation of gravity as irreversible coherence failure.
 
