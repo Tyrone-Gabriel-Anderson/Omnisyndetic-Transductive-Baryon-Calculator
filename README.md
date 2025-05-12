@@ -104,16 +104,6 @@ Each image below shows a fully computed baryon based on loop misclosure alone.
 - Coherence: 0.9400  
 - Residual Torsion: 0.2450
 
-### Λ⁰ (Lambda Baryon)
-![Lambda Baryon](https://github.com/user-attachments/assets/de4bab29-0108-45b8-83f4-4b7c54686789)
-
-- λ = 0.88811 fm, Σφ = 6.2832 rad  
-- Mass: 1015.68 MeV  
-- Charge: 0  
-- Coherence: 0.9366  
-- Residual Torsion: 0.2518
-
----
 
 ## Accuracy Summary
 
@@ -121,7 +111,6 @@ Each image below shows a fully computed baryon based on loop misclosure alone.
 |---------------|----------------------|-----------|-----------|----------------|
 | Proton        | 938.272              | 938.27    | < 0.001   | +1.60e−19      |
 | Neutron       | 939.565              | 939.58    | < 0.002   | 0              |
-| Lambda (Λ⁰)   | 1115.683             | 1015.68   | ~9.0      | 0              |
 | Sigma+ (Σ⁺)   | 1189.37              | 1189.13   | < 0.02    | +1.60e−19      |
 | Delta++ (Δ⁺⁺) | 1232.00              | 1232.21   | < 0.02    | +3.20e−19      |
 | Omega− (Ω⁻)   | 1672.45              | 1672.94   | < 0.03    | 0              |
