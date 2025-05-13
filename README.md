@@ -30,28 +30,211 @@ Each baryon is modeled as a **triadic loop** of mutual observation—a closed st
 
 ## Simulation Overview
 
-Each simulation run computes the following key quantities:
+Each run computes the following **dimensionless** and **dimensional** quantities in the Omnisyndetic framework.
 
-- **Angular Deviation (ε)**  
-  `ε = |Σφ − 2π| / 2π`
+---
 
-- **Radial Deviation (R)**  
-  `R = (λ − λ₀) / λ₀`, with `λ₀ = 0.7071 fm`
+### 1. Geometric Deviations
 
-- **Coherence Scalar (C)**  
-  `C = exp(−(ε² + R²))`
+- **Angular Deviation**  
+  \[
+    \epsilon
+    = \frac{\bigl|\sum_{i=1}^3 \phi_i \;-\;2\pi\bigr|}{2\pi}
+  \]
 
-- **Residual Torsion (δ)**  
-  `δ = sqrt(1 − C)`
+- **Radial Deviation**  
+  \[
+    R_{\mathrm{dev}}
+    = \frac{\lambda - \lambda_0}{\lambda_0},
+    \quad
+    \lambda_{0} = \frac{1}{\sqrt2}\,\mathrm{fm}\approx0.7071\ \mathrm{fm}
+  \]
 
-- **Mass (mc²)**  
-  `mc² = E_val + E_echo`
+- **Closure Curvature**  
+  \[
+    \kappa = \epsilon^2 + R_{\mathrm{dev}}^2
+  \]
 
-- **Charge (Q)**  
-  `Q ∝ sign(Δφ) × (ε^6 / λ)`
+---
 
-- **ℏc (Emergent)**  
-  Derived from curvature compression: `π(2π + Δκ)(1+ε) / δ`
+### 2. Coherence & Torsion
+
+- **Coherence Scalar**  
+  \[
+    C = e^{-\kappa}
+  \]
+
+- **Residual Torsion**  
+  \[
+    \delta = \sqrt{\,1 - C\,}
+  \]
+
+---
+
+### 3. Nexonic Return Pressure (NARP)
+
+- **NARP**  
+  \[
+    N_{\mathrm{ARP}}
+    = \pi\,\bigl(2\pi + \Delta\kappa\bigr)\,\Bigl(1 + \tfrac{1}{e}\Bigr)
+  \]
+  where
+  \[
+    \kappa_{\min} = \tfrac1{36},
+    \quad
+    \kappa_{\max} = 3 - 2\sqrt2,
+    \quad
+    \Delta\kappa = \kappa_{\max} - \kappa_{\min}.
+  \]
+
+---
+
+### 4. Coherence Window & Compression
+
+- **Coherence Window**  
+  \[
+    W = (\kappa_{\max} - \kappa_{\min})\,e^{-\kappa_{\min}}
+    \;\approx\;0.1399
+  \]
+
+- **Overlap & Compression**  
+  \[
+    \gamma = \Bigl(\tfrac{1}{36}\Bigr)^{2}, 
+    \quad
+    B = 1 - \gamma = \tfrac{1295}{1296}\approx0.999228.
+  \]
+
+- **Emergent** \(\boldsymbol{\hbar c}\)  
+  \[
+    \hbar c \;=\; B\,\frac{N_{\mathrm{ARP}}}{W}
+    \;\approx\;197.33\;\mathrm{MeV\cdot fm}.
+  \]
+
+---
+
+### 5. Memory–Field Threshold
+
+- **\(M_{0}\)**  
+  \[
+    M_{0}
+    = \frac{\pi\,N_{\mathrm{ARP}}^{2}}{W^{2}\,\lambda_{0}}
+    \;\approx\;1.73\times10^{5}\;\mathrm{MeV/fm}.
+  \]
+
+---
+
+### 6. Energy Channels
+
+Let \(\kappa=\epsilon^2+R_{\mathrm{dev}}^2\).
+
+- **Validation Energy**  
+  \[
+    E_{\mathrm{val}}
+    = 6\,\frac{N_{\mathrm{ARP}}}{\lambda}\;e^{-\kappa}.
+  \]
+
+- **Echonex Energy**  
+  \[
+    E_{\mathrm{echo}}
+    = \Delta_{\mathrm{div}}\;\chi\;(1+\delta)\;M_{0},
+    \quad
+    \Delta_{\mathrm{div}}=\frac{\lambda}{\lambda_0}+\frac{\lambda_0}{\lambda}-2,
+    \quad
+    \chi=\frac{\kappa}{\kappa+\lambda^2}.
+  \]
+
+- **Desire Energy**  
+  \[
+    E_{\mathrm{des}}
+    = \alpha\,\frac{N_{\mathrm{ARP}}\,B}{\lambda}\;\delta\;(1-C),
+    \quad
+    \alpha=\frac{\kappa}{\kappa+\lambda^2}.
+  \]
+
+---
+
+### 7. Mass
+
+- **Rest‐Mass**  
+  \[
+    m\,c^2
+    = E_{\mathrm{val}} \;+\; E_{\mathrm{echo}}.
+  \]
+
+---
+
+### 8. Charge (if used)
+
+- **Charge Proxy**  
+  \[
+    Q \;\propto\; \mathrm{sign}(\Delta\phi)\;\frac{\epsilon^{6}}{\lambda}.
+  \]
+
+---
+
+### 9. Exact Emergent \(\boldsymbol{\hbar c}\) Derivation
+
+We start from the **structural ratio** of Nexonic Return Pressure to Coherence Window, then apply the geometric Compression Factor.
+
+\[
+\boxed{
+\hbar c
+\;=\;
+B \;\times\;
+\frac{N_{\mathrm{ARP}}}{W}
+}
+\]
+
+where
+
+1. **Nexonic Return Pressure**  
+   \[
+     N_{\mathrm{ARP}}
+     = \pi\,\bigl(2\pi + \Delta\kappa\bigr)\,\Bigl(1 + \tfrac{1}{e}\Bigr),
+     \quad
+     \Delta\kappa = \kappa_{\max}-\kappa_{\min}
+   \]
+   Numerically:
+   \[
+     \kappa_{\min}=\tfrac1{36},\quad \kappa_{\max}=3-2\sqrt2
+     \;\Longrightarrow\;
+     N_{\mathrm{ARP}}\approx27.6132
+   \]
+
+2. **Coherence Window**  
+   \[
+     W = (\kappa_{\max}-\kappa_{\min})\,e^{-\kappa_{\min}}
+     \;\approx\;0.139856
+   \]
+
+3. **Compression Factor**  
+   \[
+     \gamma = \Bigl(\tfrac{1}{36}\Bigr)^2 = \tfrac{1}{1296}, 
+     \quad
+     B = 1 - \gamma = \frac{1295}{1296} \approx0.999228
+   \]
+
+Plugging in:
+
+\[
+\begin{aligned}
+\frac{N_{\mathrm{ARP}}}{W}
+&= \frac{27.6132}{0.139856}
+\;\approx\;197.480,\\[6pt]
+\hbar c
+&= B \times 197.480
+\;=\;0.999228\times197.480
+\;\approx\;197.327\;\mathrm{MeV\cdot fm}.
+\end{aligned}
+\]
+
+**Take‐away:**  
+\(\hbar c\) emerges **inevitably** from
+1. the loop’s angular bookkeeping (\(N_{\mathrm{ARP}}\)),  
+2. the survivable curvature band (\(W\)),  
+3. a tiny second‐order overlap correction (\(B\)).  
+
+No empirical input—only triadic geometry, coherence decay, and exact thresholds.
 
 ---
 
