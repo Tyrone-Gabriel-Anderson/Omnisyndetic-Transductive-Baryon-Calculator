@@ -58,22 +58,16 @@ Each simulation run computes key **dimensionless** and **dimensional** quantitie
 
 ---
 
-## 3. Nexonic Return Pressure (NARP)
+3. Nexonic Return Pressure (NARP)
 
 - **NARP**  
-  $$ 
-    N_{\mathrm{ARP}}
-    = \pi\,\bigl(2\pi + \Delta\kappa\bigr)\,\Bigl(1 + \tfrac{1}{e}\Bigr)
-  $$
-
-  where  
-  $$
-    \kappa_{\min} = \tfrac{1}{36}, 
-    \quad
-    \kappa_{\max} = 3 - 2\sqrt{2}, 
-    \quad
+  $$N_{\mathrm{ARP}}
+    = \pi\bigl(2\pi + \Delta\kappa\bigr)\Bigl(1 + \tfrac{1}{e}\Bigr),\quad
+    \kappa_{\min} = \tfrac{1}{36},\quad
+    \kappa_{\max} = 3 - 2\sqrt{2},\quad
     \Delta\kappa = \kappa_{\max} - \kappa_{\min}.
   $$
+
 
 ---
 
@@ -105,154 +99,68 @@ Each simulation run computes key **dimensionless** and **dimensional** quantitie
 ## 6. Energy Channels
 
 Let  
-$$
-  \kappa = \epsilon^{2} + R_{\mathrm{dev}}^{2}.
-$$
+$$\kappa = \epsilon^{2} + R_{\mathrm{dev}}^{2}.$$
 
 - **Validation Energy**  
-  $$
-    E_{\mathrm{val}}
-    = 6\,\frac{N_{\mathrm{ARP}}}{\lambda}\,e^{-\kappa}.
-  $$
+  $$E_{\mathrm{val}}
+    = 6\,\frac{N_{\mathrm{ARP}}}{\lambda}\,e^{-\kappa}.$$
 
 - **Echonex Energy**  
-  $$
-    \begin{aligned}
-    E_{\mathrm{echo}}
-      &= \Delta_{\mathrm{div}}\;\chi\;(1 + \delta)\;M_{0},\\
-    \Delta_{\mathrm{div}}
-      &= \frac{\lambda}{\lambda_{0}} + \frac{\lambda_{0}}{\lambda} - 2,\\
-    \chi
-      &= \frac{\kappa}{\kappa + \lambda^2}.
-    \end{aligned}
-  $$
+  $$E_{\mathrm{echo}}
+    = \Delta_{\mathrm{div}}\;\chi\;(1 + \delta)\;M_{0},
+    \quad \Delta_{\mathrm{div}} = \frac{\lambda}{\lambda_{0}} + \frac{\lambda_{0}}{\lambda} - 2,
+    \quad \chi = \frac{\kappa}{\kappa + \lambda^2}.$$
 
 - **Desire Energy**  
-  $$
-    \begin{aligned}
-    E_{\mathrm{des}}
-      &= \alpha\,\frac{N_{\mathrm{ARP}}\,B}{\lambda}\;\delta\;(1 - C),\\
-    \alpha
-      &= \frac{\kappa}{\kappa + \lambda^2}.
-    \end{aligned}
-  $$
+  $$E_{\mathrm{des}}
+    = \alpha\,\frac{N_{\mathrm{ARP}}\,B}{\lambda}\;\delta\;(1 - C),
+    \quad \alpha = \frac{\kappa}{\kappa + \lambda^2}.$$
 
 ---
 
 ## 7. Rest Mass
 
-- **Rest‐Mass**  
-  $$
-    m\,c^{2}
-    \;=\;
-    E_{\mathrm{val}}
-    + E_{\mathrm{echo}}\,.
-  $$
+- **Rest-Mass**  
+  $$m\,c^{2} = E_{\mathrm{val}} + E_{\mathrm{echo}}.$$
 
 ---
 
 ## 8. Charge Proxy 
 
 - **Charge**  
-  $$
-    Q \;\propto\; 
-    \mathrm{sign}(\Delta \phi)\;\frac{\epsilon^{6}}{\lambda}\,.
-  $$
+  $$Q \;\propto\; 
+    \mathrm{sign}(\Delta \phi)\;\frac{\epsilon^{6}}{\lambda}\,.$$
 
 ---
 
-## 9. Exact Emergent   ℏ c 
+## 9. Emergent ℏ c
 
 1. **Nexonic Return Pressure**  
-   $$
-     N_{\mathrm{ARP}}
-     = \pi\,(2\pi + \Delta\kappa)\,\Bigl(1 + \tfrac1e\Bigr),
-     \quad
-     \Delta\kappa = \kappa_{\max} - \kappa_{\min}.
-   $$
-
-2. **Coherence Window**  
-   $$
-     W
-     = (\kappa_{\max} - \kappa_{\min})\,e^{-\kappa_{\min}}
-     \;\approx\;0.139856.
-   $$
-
-3. **Compression Factor**  
-   $$
-     \gamma = \Bigl(\tfrac{1}{36}\Bigr)^{2} = \tfrac{1}{1296},
-     \quad
-     B = 1 - \gamma = \tfrac{1295}{1296}\approx0.999228.
-   $$
-
-Putting it all together:
-
-$$
-\hbar c
-= B \;\frac{N_{\mathrm{ARP}}}{W}
-\approx 0.999228 \times \frac{27.6132}{0.139856}
-\approx 197.327\;\mathrm{MeV\!\cdot\!fm}.
-$$
-
-## 7. Rest Mass
-
-- **Rest-Mass**  
-  $$
-    m\,c^{2}
-    = 
-    E_{\mathrm{val}}
-    + E_{\mathrm{echo}}.
-  $$
-
----
-
-## 8. Charge Proxy
-
-- **Charge**  
-  $$
-    Q \;\propto\;
-    \mathrm{sign}(\Delta \phi)\;\frac{\epsilon^{6}}{\lambda}.
-  $$
-
----
-
-## 9. Exact Emergent ℏ c
-
-1. **Nexonic Return Pressure**  
-   $$
-     N_{\mathrm{ARP}}
+   $$N_{\mathrm{ARP}}
      = \pi\,\bigl(2\pi + \Delta\kappa\bigr)\,
        \Bigl(1 + \tfrac{1}{e}\Bigr),
      \quad
-     \Delta\kappa = \kappa_{\max} - \kappa_{\min}.
-   $$
+     \Delta\kappa = \kappa_{\max} - \kappa_{\min}.$$
 
 2. **Coherence Window**  
-   $$
-     W
+   $$W
      = (\kappa_{\max} - \kappa_{\min})\,e^{-\kappa_{\min}}
-     \;\approx\;0.139856.
-   $$
+     \;\approx\;0.139856.$$
 
 3. **Compression Factor**  
-   $$
-     \gamma = \Bigl(\tfrac{1}{36}\Bigr)^{2} = \tfrac{1}{1296},
+   $$\gamma = \Bigl(\tfrac{1}{36}\Bigr)^{2} = \tfrac{1}{1296},
      \quad
-     B = 1 - \gamma = \tfrac{1295}{1296}\approx0.999228.
-   $$
+     B = 1 - \gamma = \tfrac{1295}{1296}\approx0.999228.$$
 
 Putting it all together:
 
-$$
-\hbar c
+$$\hbar c
 = B \;\frac{N_{\mathrm{ARP}}}{W}
 \approx 0.999228 \times \frac{27.6132}{0.139856}
-\approx 197.327\;\mathrm{MeV\!\cdot\!fm}.
-$$
+\approx 197.327\;\mathrm{MeV\!\cdot\!fm}.$$
 Plugging in:
 
-$$
-\begin{aligned}
+$$\begin{aligned}
 \frac{N_{\mathrm{ARP}}}{W}
 &= \frac{27.6132}{0.139856}
 \;\approx\;197.480,\\[6pt]
@@ -260,16 +168,18 @@ $$
 &= B \times 197.480
 \;=\;0.999228 \times 197.480
 \;\approx\;197.327\;\mathrm{MeV\cdot fm}.
-\end{aligned}
-$$
+\end{aligned}$$
+
 
 **Take-away:**  
 \(\hbar c\) emerges **inevitably** from  
-1. the loop’s angular bookkeeping (\(N_{\mathrm{ARP}}\)),  
+1. the echonex angular bookkeeping (\(N_{\mathrm{ARP}}\)),  
 2. the survivable curvature band (\(W\)),  
 3. a tiny second-order overlap correction (\(B\)).  
 
 No empirical input—only triadic geometry, coherence decay, and exact thresholds.
+
+
 
 
 ## Baryon Configurations
