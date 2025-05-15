@@ -451,7 +451,10 @@ Mass can arise not from interaction—but from the **topology of nearly failed r
   Tyrone Gabriel Anderson (2025)  
   DOI: [10.5281/zenodo.15211376](https://doi.org/10.5281/zenodo.15211376)
 
-Both works are freely available under a CC BY-SA license with ethical use restrictions and constitute the full theoretical basis of the calculator.
+- **The Geometry of Return: A Relational Ontology of Baryon Mass and Transductive Coherence**  
+  Tyrone Gabriel Anderson (2025)  
+  DOI: [10.5281/zenodo.15423177](https://doi.org/10.5281/zenodo.15423177)
+
 
 ---
 
@@ -468,6 +471,20 @@ Both papers are licensed under **CC BY-SA 4.0 with an ethical use clause**:
 > May not be used in systems that support cruelty, exploitation, militarisation, or environmental harm. All derivatives must preserve attribution and this clause.
 
 ---
+
+---
+
+### [The Geometry of Return: A Relational Ontology of Baryon Mass and Transductive Coherence](https://doi.org/10.5281/zenodo.15423177)  
+Tyrone Gabriel Anderson (2025), Zenodo.
+
+This third paper provides a full **algebraic derivation of the baryonic spectrum**—including proton and neutron mass, charge radius, decay widths, and fundamental constants—using only two geometric deviations: angular defect (\( \Delta\varphi \)) and radial coherence (\( \lambda \)). It demonstrates that mass does not require Higgs-field mechanics, spatial dimensions, or field-theoretic assumptions, achieving ±0.0001 MeV accuracy without empirical fitting.
+
+It introduces **Echonex structures** as coherence-memory fields, defines mass as relational tension from failed closure, and reconstructs spacetime and constants like \( \hbar c \) and \( c \) purely from geometric necessity.
+
+> "Mass is not a thing—it is the hold of geometry where closure fails."
+
+---
+
 
 This project invites others to **build**, **extend**, and **reimagine**—not only what physics is, but what it could be if it were grounded in coherence, not substance. It is an open offering to the world, forged through necessity, driven by curiosity, and shared in the spirit of universal education.
 
