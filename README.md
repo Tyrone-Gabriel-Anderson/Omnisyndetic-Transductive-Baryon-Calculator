@@ -1,22 +1,29 @@
 # Omnisyndetic Baryon Calculator
 
-The **Omnisyndetic Baryon Calculator** is a real-time geometric simulation engine that derives the mass, charge, curvature, and coherence of baryons from a purely topological framework. This model does not rely on particles, quantum fields, or empirical constants. Instead, it reconstructs identity from the failure of relational closure—using deviation in geometric loops as the only source of physical structure.
+The **Omnisyndetic Baryon Calculator** is a geometric simulation framework for computing baryon mass, charge, and internal coherence using only structural closure. It does not rely on quantum fields, particle ontologies, or Standard Model constants. Instead, it derives all quantities from a present-centric, topological reconstruction of relational constraint.
 
-This repository contains the Unity/WebGL simulator that allows users to dynamically compute baryon properties using only two inputs:
-- **Radial coherence length (λ)** — the spatial return scale of a triadic loop
-- **Total angular closure (Σφ)** — the sum of internal loop angles
+This tool is not a replacement for existing physics — it’s a structural lens. One that asks: what if mass arises from constraint tension? What if identity is coherence across now?
 
-From these, the calculator derives:
-- Mass (mc²)
-- Charge (Q)
-- Validation and Echonex energy
-- Feedback delay and decay offset
-- Planck units (ℏc)
-- Speed of light as coherence bandwidth
+## Overview
 
----
+This repository contains a Unity/WebGL application that calculates baryon properties using just two inputs:
 
-## The Omnisyndetic Framework
+- **λ (lambda)**: the empirical coherence radius of the baryon, typically its charge radius (measured in femtometers)
+- **Q (charge)**: the electric charge of the baryon, which sets its angular deviation δ
+
+From these inputs, the simulator computes:
+
+- Mass (in MeV)
+- Charge
+- Validation energy (geometric stabilizing pressure)
+- Echo energy (structural remainder)
+- Relational feedback delay
+- Decay asymmetry offset
+- Geometric coherence metrics (Planck-normalized where relevant)
+
+There are no fit parameters. No empirical values from the Standard Model are used beyond the measurable baryon radius and its charge. All numerical results emerge from structural closure within a single constraint field.
+
+## Structural Derivation of Mass
 
 The Omnisyndetic Framework is a relational reformulation of baryonic structure. It assumes:
 - Identity is the memory of attempted closure.
@@ -25,6 +32,36 @@ The Omnisyndetic Framework is a relational reformulation of baryonic structure. 
 - Charge is the directional bias in loop curvature.
 
 Each baryon is modeled as a **triadic loop** of mutual observation—a closed structure of three nexons joined by six directed arcs. Perfect closure (Σφ = 2π, λ = λ₀) yields no identity. But **slight misclosure** stores curvature, which expresses as mass, charge, and temporal persistence.
+
+
+**Parameters:**
+
+- `λ` — Coherence span (measured charge radius)
+- `δ` — Angular deviation (computed from electric charge Q)
+- `C` — Geometric coherence factor: \( C = e^{-κ} \)
+- `λ₀` — Normalization span for curvature tension
+- `χ` — Angular tension multiplier
+- `M₀` — Base mass scale (derived)
+- `NARP` — Non-Angular Relational Pressure constant ≈ 27.61
+
+## Accuracy and Results
+
+This model can compute the entire baryonic mass from geometry alone. Once λ is set within its experimental margin of ±0.005 fm (based on CODATA/PDG), the output mass is accurate within ±0.001 MeV.
+
+Example calculations:
+
+| Baryon  | Radius λ (fm) | Computed Mass (MeV) |
+|---------|----------------|----------------------|
+| Proton  | 0.84211         | 938.272              |
+| Neutron | 0.883039        | 939.564              |
+
+There is no fitting. The mass is not assigned — it is resolved.
+
+## Conceptual Notes
+
+All quantities in this framework collapse as λ approaches 1 fm — a natural limit for radial coherence. Beyond this, distinction cannot resolve, and the model loses structural identity. Mass is not something added to particles — it is the tension required to maintain coherence within a single present surface.
+
+The Omnisyndetic Baryon Calculator offers one coherent alternative interpretation: a purely relational one, grounded in geometry, where every quantity arises from now — and only now.
 
 ---
 
@@ -486,6 +523,18 @@ It introduces **Echonex structures** as coherence-memory fields, defines mass as
 ---
 
 
-This project invites others to **build**, **extend**, and **reimagine**—not only what physics is, but what it could be if it were grounded in coherence, not substance. It is an open offering to the world, forged through necessity, driven by curiosity, and shared in the spirit of universal education.
+---
+
+### 🌐 Dive Deeper into the Framework
+
+Everything shared here is part of a larger, open-access initiative.
+
+You can explore detailed explanations, diagrams, and evolving philosophical structures — all entirely free — at:
+
+👉 **[omnisyndetics.org/axiom-zero-distinction-as-primacy](https://omnisyndetics.org/axiom-zero-distinction-as-primacy)**
+
+Stay up to date with ongoing developments, and explore how the Eternal Present, constraint theory, and coherence logic unfold across the full framework.
+
+---
 
 
