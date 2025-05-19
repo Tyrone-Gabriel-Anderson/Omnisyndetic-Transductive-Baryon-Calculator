@@ -2,7 +2,7 @@
 
 The **Omnisyndetic Baryon Calculator** is a geometric simulation framework for computing baryon mass, charge, and internal coherence using only structural closure. It does not rely on quantum fields, particle ontologies, or Standard Model constants. Instead, it derives all quantities from a present-centric, topological reconstruction of relational constraint.
 
-This tool is not a replacement for existing physics — it’s a structural lens. One that asks: what if mass arises from constraint tension? What if identity is coherence across now?
+This tool is not a replacement for existing physics — it’s a structural lens. One that asks: what if mass arises from constraint tension? What if identity is coherence across now? 
 
 ## Overview
 
