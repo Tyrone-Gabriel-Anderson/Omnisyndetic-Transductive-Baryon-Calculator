@@ -223,8 +223,9 @@ No empirical input—only triadic geometry, coherence decay, and exact threshold
 
 Each image below shows a fully computed baryon based on loop misclosure alone.
 
-### Ω⁻ Baryon
-![Ω⁻ Baryon](https://github.com/user-attachments/assets/7b90e541-2047-450a-9b7e-b13b6d718680)
+### Ω⁻ 
+![Omh](https://github.com/user-attachments/assets/86ee5d40-229b-4321-9ed1-860ed5c46d38)
+Baryon
 
 - λ = 0.92265 fm, Σφ = 6.2832 rad, ε = 0.0000  
 - Mass: 1672.94 MeV  
