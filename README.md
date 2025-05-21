@@ -18,7 +18,6 @@ From these inputs, the simulator computes:
 - Validation energy (geometric stabilizing pressure)
 - Echo energy (structural remainder)
 - Relational feedback delay
-- Decay asymmetry offset
 - Geometric coherence metrics (Planck-normalized where relevant)
 
 There are no fit parameters. No empirical values from the Standard Model are used beyond the measurable baryon radius and its charge. All numerical results emerge from structural closure within a single constraint field.
@@ -377,13 +376,13 @@ These ideas position **relation** as ontologically prior to both **substance** a
 
 | Term              | Definition                                                                 |
 |-------------------|---------------------------------------------------------------------------|
-| `λ`               | Coherence length — radial distance a loop can stably persist             |
+| `λ`               | Coherence length — radial distance a loop can stably persist              |
 | `Σφ`              | Total angular sum of internal arcs                                        |
 | `ε`               | Angular misclosure error, normalized to 2π                                |
-| `C`               | Coherence scalar — likelihood that identity returns                      |
+| `C`               | Coherence scalar — likelihood that identity returns                       |
 | `δ`               | Torsion — the curvature memory retained from imperfect closure            |
 | `E_val`           | Validation energy — energy from the confirmed portion of the loop         |
-| `E_echo`          | Echonex energy — unresolved return energy, often associated with decay    |
+| `E_echo`          | Echonex energy — unresolved return energy of recursive feedback memory    |
 | `NARP`            | Normalized Arc Return Parameter — a geometric energy scaling constant     |
 | `χ`               | Curvature allocation ratio — fraction of energy allocated to torsion      |
 | `mc²`             | Total baryonic mass energy — sum of validation and echonex energy         |
@@ -415,9 +414,12 @@ This derivation provides strong theoretical evidence that:
 This stands as the first known derivation of ℏc from a **purely symbolic-geometric ontology**, and re-positions quantum behavior as a **consequence of relational saturation**, not probabilistic collapse.
 
 
-
+⚠ Important note:
+The included decay model is not ontologically derived, canonical, or geometrically grounded within the formal framework. It is a provisional, empirical implementation inspired by axial coupling effects, currently using an exponential fit to approximate decay behaviour. Its purpose is purely illustrative — to reflect ongoing developmental thinking and model behaviour under unstable or non-coherent configurations (e.g. duads/mesons).
+This placeholder will be replaced once duad and meson formation are fully derived within the framework’s transductive geometry.
 
 ## About the Author and Philosophical Commitment
+
 
 This project was developed independently by **Tyrone Gabriel Anderson**, a self-taught researcher working at the intersection of metaphysics, symbolic geometry, and simulation-based modeling. Built without institutional affiliation, the **Omnisyndetic Framework** and this calculator represent a personal, first-principles rethinking of how mass, charge, and structure can emerge purely from topological feedback.
 
