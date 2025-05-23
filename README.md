@@ -161,11 +161,77 @@ $$\kappa = \epsilon^{2} + R_{\mathrm{dev}}^{2}.$$
 
 ---
 
-## 8. Charge Proxy 
+## 8. Charge Proxy
 
-- **Charge**  
-  $$Q \;\propto\; 
-    \mathrm{sign}(\Delta \phi)\;\frac{\epsilon^{6}}{\lambda}\,.$$
+We can capture the **quantisation** of electric charge in a simple scalar “proxy’’ that depends only on the **sign** of the angular deficit, the sixth power of the dimensionless tension, and the coherence radius.  Specifically, define
+
+$$Q \;\propto\; \mathrm{sign}(\Delta \phi)\,\frac{\epsilon^{6}}{\lambda}\,. $$
+
+Here:
+
+- $\displaystyle \Delta\phi$ is the total angular misclosure of a triad:  
+  $$\Delta\phi \;=\; \sum_{i=1}^{3}\Delta\phi_{i}
+    \;=\; w\,\frac{\pi}{3}, 
+    \quad w\in\{-1,0,+1\}\,. $$
+- $\displaystyle \epsilon$ is the **dimensionless tension**, i.e.\ the fraction of a full turn missing:
+  $$\epsilon
+    \;=\;\frac{\lvert\Delta\phi\rvert}{2\pi}
+    \;=\;\frac{\lvert w\rvert}{6}\,. $$
+- $\displaystyle \lambda$ is the **coherence radius** of the triad (with units of length).
+
+---
+
+### 8.1 Derivation of Quantisation
+
+1. **Discrete winding.**  
+   From Proposition 3.1 we have
+   $$\Delta\phi = w\,\frac{\pi}{3},\quad w\in\{-1,0,+1\},$$
+   so the only nonzero possibilities are $w=+1$ or $w=-1$.
+
+2. **Dimensionless tension.**  
+   By definition,
+   $$
+     \epsilon = \frac{\lvert\Delta\phi\rvert}{2\pi}
+              = \frac{\lvert w\rvert}{6}
+              \;\in\;\{0,\tfrac{1}{6}\}\,.
+   $$
+
+3. **Sixth‐power “filter”.**  
+   Raising $\epsilon$ to the sixth power annihilates any subunitary value except $\tfrac{1}{6}$:
+   $$
+     \epsilon^6
+     = 
+     \begin{cases}
+       0^6 = 0, &w=0,\\
+       \bigl(\tfrac{1}{6}\bigr)^6, &\lvert w\rvert=1.
+     \end{cases}
+   $$
+   Hence $\epsilon^6$ is already quantised: it is zero for $w=0$ and a fixed constant for $|w|=1$.
+
+4. **Sign encoding.**  
+   The factor $\mathrm{sign}(\Delta\phi)=\mathrm{sign}(w)$ carries the charge polarity:
+   $$
+     \mathrm{sign}(\Delta\phi)
+     = 
+     \begin{cases}
+       +1, & w=+1,\\
+       -1, & w=-1,\\
+        0, & w=0.
+     \end{cases}
+   $$
+
+5. **Putting it together.**  
+   Thus
+   $$
+     \mathrm{sign}(\Delta\phi)\,\epsilon^6
+     = \frac{w}{6^6},
+   $$
+   and the proxy
+   $$
+     Q \;\propto\; \mathrm{sign}(\Delta\phi)\,\frac{\epsilon^6}{\lambda}
+     = \frac{w}{6^6}\,\frac{1}{\lambda}.
+   $$
+   Since $w\in\{-1,0,+1\}$, this expression is **automatically quantised** in three levels: $-1,0,+1$ (up to the overall proportionality constant and the smooth $1/\lambda$ factor).
 
 ---
 
