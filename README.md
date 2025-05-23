@@ -526,6 +526,30 @@ It introduces **Echonex structures** as coherence-memory fields, defines mass as
 ---
 
 
+## [Charge as Closure in the Omnisyndetic Framework: A Relational-Ontology–Coherence Derivation of Quantisation](https://doi.org/10.5281/zenodo.15496177)  
+**Tyrone Gabriel Anderson** (2025), Zenodo
+
+This fourth paper delivers a complete **first-principles derivation of electric charge quantisation** from the same two geometric deviations—angular defect (Δφ) and radial coherence (λ)—that underlie the baryon mass spectrum. It shows how ±e, ±⅓e, and ±⅔e charges emerge inevitably from the discrete counting of “echo-unit” deficits in triads and duads, and how the familiar Dirac monopole condition falls out of a purely relational U(1) gauge connection.
+
+### Key contributions
+- **Echo-unit counting → quantised charge**  
+  Removing a single π∕3 sector in a three-node loop yields three π∕9 kinks, defining an integer winding number *w* and hence *Q = w e* without inserting *e* by hand.  
+- **U(1) gauge from validation-phase geometry**  
+  Nexons’ mutual-validation phases form a natural principal bundle; its curvature integrates to the angular misclosure, recovering *e g = ħ/2* directly from relational action.  
+- **Two-parameter unification**  
+  Coherence radius λ governs mass spectra, while integer angular tension *w* fixes charge. Together they span the entire baryon zoo in the live “Baryon-Calculator,” reproducing known masses **and** charges to high precision.
+
+> “Charge is not a thing—it is the remainder of an almost-closed observation loop.”
+
+---
+
+### 🔗 Open-Source Resources
+- **Omnisyndetics.org** — papers, essays, live calculators  
+  https://omnisyndetics.org/  
+- **GitHub (AGPL-3.0)** — Unity simulator, LaTeX source, notebooks  
+  https://github.com/Tyrone-Gabriel-Anderson/Omnisyndetic-Transductive-Baryon-Calculator  
+
+
 ---
 
 ### 🌐 Dive Deeper into the Framework
