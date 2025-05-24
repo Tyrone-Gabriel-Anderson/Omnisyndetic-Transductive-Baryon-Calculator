@@ -1,3 +1,18 @@
+# Omnisyndetic Framework
+
+**Omnisyndetics** is a formal relational ontology in which identity, structure, and reality itself emerge through the act of distinction. It rejects the notion of substance or form existing independently of relation, proposing instead that all actuality arises from the collapse of undifferentiated potential into coherent configuration.
+
+This framework is grounded in the following core premise:
+
+> To be is to be distinguishable, and all distinction is relational.
+
+## Observation and Collapse
+
+Within the Omnisyndetic model, **observation** is not understood as reception or measurement, but as the **act of structural distinction**. The observer is not an external agent but an operational condition: wherever distinction occurs, observation has already taken place.
+
+The observation-collapse operator is defined as:  
+`𝒪 : ℙ → 𝒮  where 𝒪(ψ) = s`
+
 
 - ℙ — the undifferentiated space of latent potential  
 - 𝒮 — the domain of coherent, actualized structures  
