@@ -1,8 +1,41 @@
-# Omnisyndetic Baryon Calculator
 
-The **Omnisyndetic Baryon Calculator** is a geometric simulation framework for computing baryon mass, charge, and internal coherence using only structural closure. It does not rely on quantum fields, particle ontologies, or Standard Model constants. Instead, it derives all quantities from a present-centric, topological reconstruction of relational constraint.
+- ℙ — the undifferentiated space of latent potential  
+- 𝒮 — the domain of coherent, actualized structures  
+- ψ — a potential configuration  
+- O — the act of collapse: resolution into distinguishable form
 
-This tool is not a replacement for existing physics — it’s a structural lens. One that asks: what if mass arises from constraint tension? What if identity is coherence across now? 
+No form exists prior to collapse. There is no identity without relation, and no relation without distinction.
+
+## Relational Identity
+
+In this ontology, identity is not given, but resolved. A structure persists only if it maintains coherence under constraint. What we call "objects" are simply stable convergence points within a network of relational returns. Form does not endure as substance, but as validated coherence.
+
+This principle allows us to formalize emergence, coherence, and even mass not through matter, but through topological agreement.
+
+## The Baryon Calculator
+
+This repository includes an application of the Omnisyndetic framework in the form of the **Baryon Calculator** — a tool that models baryonic mass not by invoking particles or fields, but through constraint convergence within a relational geometry.
+
+Unlike traditional physical modeling, this calculator does not begin with spacetime or substance. Instead, it derives baryonic structure from:
+
+- Coherent resolution of constraint surfaces  
+- Relational overlap between nexonic potentials  
+- Information-contractive convergence into actual form
+
+It is an example of how Omnisyndetics can function as a generative engine for physical theory and epistemological modeling.
+
+## Learn More
+
+Full ontology, interactive visualizations, and philosophical grounding are available at:
+
+**[https://omnisyndetics.org](https://omnisyndetics.org)**
+
+This site includes:
+- Formal definitions of Axiom 0–4
+- Interactive visual representations of collapse and coherence
+- Open-access papers and technical proofs
+- Philosophical foundations of the Omnisyndetic approach
+
 
 ## Overview
 
@@ -607,16 +640,7 @@ This fourth paper delivers a complete **first-principles derivation of electric 
 
 > “Charge is not a thing—it is the remainder of an almost-closed observation loop.”
 
----
 
-### 🔗 Open-Source Resources
-- **Omnisyndetics.org** — papers, essays, live calculators  
-  https://omnisyndetics.org/  
-- **GitHub (AGPL-3.0)** — Unity simulator, LaTeX source, notebooks  
-  https://github.com/Tyrone-Gabriel-Anderson/Omnisyndetic-Transductive-Baryon-Calculator  
-
-
----
 
 ### 🌐 Dive Deeper into the Framework
 
