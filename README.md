@@ -45,6 +45,8 @@ Full ontology, interactive visualizations, and philosophical grounding are avail
 
 **[https://omnisyndetics.org](https://omnisyndetics.org)**
 
+Note: The old website https://RecursiveFieldTheory.org is no longer in use, and all future works will be under omnisyndetics.org (Currently under development as I port finalised versions of work to the new site)
+
 This site includes:
 - Formal definitions of Axiom 0–4
 - Interactive visual representations of collapse and coherence
