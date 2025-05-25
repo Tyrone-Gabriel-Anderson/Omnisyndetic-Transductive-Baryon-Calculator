@@ -45,8 +45,11 @@ Full ontology, interactive visualizations, and philosophical grounding are avail
 
 **[https://omnisyndetics.org](https://omnisyndetics.org)**
 
-Note: The old website https://RecursiveFieldTheory.org is no longer in use, and all future works will be under omnisyndetics.org (Currently under development as I port finalised versions of work to the new site)
-I chaged the web domain to this name, as I had started seeing more and more theories popping up named "Recursive Theory" over the past year, that seemed to have little to do with my work other than naming, to show greater disiction, I chose to move to the new website. The new site is still underconstruction, but will be fully functional with all dirvitives again soon with a fresh new feel and much better navigation. 
+Note: The original site RecursiveFieldTheory.org is no longer active. All future work will appear at omnisyndetics.org, which is currently being rebuilt as the new home for this framework.
+
+The name change reflects both clarity and correction. “Recursive Theory” has recently been used in unrelated projects with no meaningful connection to this work. More importantly, the term recursion misleadingly suggests step-wise iteration or time-based computation—neither of which apply here. This system operates through immediate relational actualisation, not temporal recursion. This is completly true of this calculator also, it runs in a single update with no corrective properties or measures over time. It is actualised totally in the single frame true to the ontology. No recusive functions or internal calls necicary. Not even a forloop. 
+
+The new site will relaunch soon with all content restructured and updated for clarity, coherence, and usability.
 
 
 This site includes:
