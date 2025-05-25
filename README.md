@@ -46,6 +46,8 @@ Full ontology, interactive visualizations, and philosophical grounding are avail
 **[https://omnisyndetics.org](https://omnisyndetics.org)**
 
 Note: The old website https://RecursiveFieldTheory.org is no longer in use, and all future works will be under omnisyndetics.org (Currently under development as I port finalised versions of work to the new site)
+I chaged the web domain to this name, as I had started seeing more and more theories popping up named "Recursive Theory" over the past year, that seemed to have little to do with my work other than naming, to show greater disiction, I chose to move to the new website. The new site is still underconstruction, but will be fully functional with all dirvitives again soon with a fresh new feel and much better navigation. 
+
 
 This site includes:
 - Formal definitions of Axiom 0–4
