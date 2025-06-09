@@ -14,10 +14,10 @@ The observation-collapse operator is defined as:
 `𝒪 : ℙ → 𝒮  where 𝒪(ψ) = s`
 
 
-- ℙ — the undifferentiated space of latent potential  
-- 𝒮 — the domain of coherent, actualized structures  
-- ψ — a potential configuration  
-- O — the act of collapse: resolution into distinguishable form
+- ℙ   the undifferentiated space of latent potential  
+- 𝒮   the domain of coherent, actualized structures  
+- ψ   a potential configuration  
+- O   the act of collapse: resolution into distinguishable form
 
 No form exists prior to collapse. There is no identity without relation, and no relation without distinction.
 
@@ -29,7 +29,7 @@ This principle allows us to formalize emergence, coherence, and even mass not th
 
 ## The Baryon Calculator
 
-This repository includes an application of the Omnisyndetic framework in the form of the **Baryon Calculator** — a tool that models baryonic mass not by invoking particles or fields, but through constraint convergence within a relational geometry.
+This repository includes an application of the Omnisyndetic framework in the form of the **Baryon Calculator**   a tool that models baryonic mass not by invoking particles or fields, but through constraint convergence within a relational geometry.
 
 Unlike traditional physical modeling, this calculator does not begin with spacetime or substance. Instead, it derives baryonic structure from:
 
@@ -81,18 +81,18 @@ The Omnisyndetic Framework is a relational reformulation of baryonic structure. 
 - Mass is the stored tension from partial coherence.
 - Charge is the directional bias in loop curvature.
 
-Each baryon is modeled as a **triadic loop** of mutual observation—a closed structure of three nexons joined by six directed arcs. Perfect closure (Σφ = 2π, λ = λ₀) yields no identity. But **slight misclosure** stores curvature, which expresses as mass, charge, and temporal persistence.
+Each baryon is modeled as a **triadic loop** of mutual observation a closed structure of three nexons joined by six directed arcs. Perfect closure (Σφ = 2π, λ = λ₀) yields no identity. But **slight misclosure** stores curvature, which expresses as mass, charge, and temporal persistence.
 
 
 **Parameters:**
 
-- `λ` — Coherence span (measured charge radius)
-- `δ` — Angular deviation (computed from electric charge Q)
-- `C` — Geometric coherence factor: \( C = e^{-κ} \)
-- `λ₀` — Normalization span for curvature tension
-- `χ` — Angular tension multiplier
-- `M₀` — Base mass scale (derived)
-- `NARP` — Non-Angular Relational Pressure constant ≈ 27.61
+- `λ`   Coherence span (measured charge radius)
+- `δ`   Angular deviation (computed from electric charge Q)
+- `C`   Geometric coherence factor: \( C = e^{-κ} \)
+- `λ₀`   Normalization span for curvature tension
+- `χ`   Angular tension multiplier
+- `M₀`   Base mass scale (derived)
+- `NARP`   Non-Angular Relational Pressure constant ≈ 27.61
 
 ## Accuracy and Results
 
@@ -105,13 +105,13 @@ Example calculations:
 | Proton  | 0.84211         | 938.272              |
 | Neutron | 0.883039        | 939.564              |
 
-There is no fitting. The mass is not assigned — it is resolved.
+There is no fitting. The mass is not assigned   it is resolved.
 
 ## Conceptual Notes
 
-All quantities in this framework collapse as λ approaches 1 fm — a natural limit for radial coherence. Beyond this, distinction cannot resolve, and the model loses structural identity. Mass is not something added to particles — it is the tension required to maintain coherence within a single present surface.
+All quantities in this framework collapse as λ approaches 1 fm   a natural limit for radial coherence. Beyond this, distinction cannot resolve, and the model loses structural identity. Mass is not something added to particles   it is the tension required to maintain coherence within a single present surface.
 
-The Omnisyndetic Baryon Calculator offers one coherent alternative interpretation: a purely relational one, grounded in geometry, where every quantity arises from now — and only now.
+The Omnisyndetic Baryon Calculator offers one coherent alternative interpretation: a purely relational one, grounded in geometry, where every quantity arises from now   and only now.
 
 ---
 
@@ -330,7 +330,7 @@ $$\begin{aligned}
 2. the survivable curvature band (\(W\)),  
 3. a tiny second-order overlap correction (\(B\)).  
 
-No empirical input—only triadic geometry, coherence decay, and exact thresholds.
+No empirical input only triadic geometry, coherence decay, and exact thresholds.
 
 
 
@@ -414,7 +414,7 @@ This section explains the theoretical underpinnings of the Omnisyndetic Framewor
 
 ---
 
-### 1. Validation Energy — The Energy of Return
+### 1. Validation Energy   The Energy of Return
 
 **Validation** is the energy stored in the portion of the loop that *does return*. It reflects the degree to which a triadic feedback loop successfully reaffirms itself.
 
@@ -430,9 +430,9 @@ Validation is not a force but a **structural confirmation**. It is the energy re
 
 ---
 
-### 2. Echonex Energy — The Memory of Failure
+### 2. Echonex Energy   The Memory of Failure
 
-**Echonex** refers to the part of the loop that *cannot return* — the unresolved tension in the structure. This energy expresses as residual mass, curvature, and ultimately field divergence when deviation is too large.
+**Echonex** refers to the part of the loop that *cannot return*   the unresolved tension in the structure. This energy expresses as residual mass, curvature, and ultimately field divergence when deviation is too large.
 
 **Equation:**
 - `λ₀ = 1 / √2` fm (ideal coherence length)
@@ -446,7 +446,7 @@ Echonex stores **curvature memory**. It encodes the energetic debt of incomplete
 
 ---
 
-### 3. Triads — The Minimal Identity Loop
+### 3. Triads   The Minimal Identity Loop
 
 A **Triad** is the most fundamental structure capable of self-closure. It is composed of:
 - **3 nexons** (relational nodes)
@@ -472,20 +472,20 @@ This structure represents a **self-reflective loop**, where each node observes a
 
 ### 4. Ontology: The Geometry of Being
 
-The Omnisyndetic Framework is more than a calculator—it is a **relational ontology**, proposing a new basis for existence itself.
+The Omnisyndetic Framework is more than a calculator it is a **relational ontology**, proposing a new basis for existence itself.
 
 **Core Ontological Assertions:**
 
 | Principle                            | Meaning                                                                 |
 |-------------------------------------|-------------------------------------------------------------------------|
-| To exist is to return                | Identity is sustained feedback; not static, but recursive               |
+| To exist is to return                | Identity is sustained feedback; not static, but process                |
 | Geometry precedes quantity           | Structure comes before measurement; π and √2 are primary, not constants |
 | Matter is misclosure memory          | Mass is what curvature remembers from failed return                    |
 | Charge is directional asymmetry      | Arises from angular bias in loop configuration                         |
 | Space is unresolved feedback         | Field tension is spatial projection of failure                         |
 | Time is displacement from unity      | Duration = deviation from perfect return (τ)                           |
 
-These ideas position **relation** as ontologically prior to both **substance** and **field**. Instead of particles moving through space, the universe is composed of *loops trying to close*—and storing tension when they fail.
+These ideas position **relation** as ontologically prior to both **substance** and **field**. Instead of particles moving through space, the universe is composed of *loops trying to close* and storing tension when they fail.
 
 ---
 
@@ -493,17 +493,17 @@ These ideas position **relation** as ontologically prior to both **substance** a
 
 | Term              | Definition                                                                 |
 |-------------------|---------------------------------------------------------------------------|
-| `λ`               | Coherence length — radial distance a loop can stably persist              |
+| `λ`               | Coherence length   radial distance a loop can stably persist              |
 | `Σφ`              | Total angular sum of internal arcs                                        |
 | `ε`               | Angular misclosure error, normalized to 2π                                |
-| `C`               | Coherence scalar — likelihood that identity returns                       |
-| `δ`               | Torsion — the curvature memory retained from imperfect closure            |
-| `E_val`           | Validation energy — energy from the confirmed portion of the loop         |
-| `E_echo`          | Echonex energy — unresolved return energy of recursive feedback memory    |
-| `NARP`            | Normalized Arc Return Parameter — a geometric energy scaling constant     |
-| `χ`               | Curvature allocation ratio — fraction of energy allocated to torsion      |
-| `mc²`             | Total baryonic mass energy — sum of validation and echonex energy         |
-| `Q`               | Charge — arising from sign and power of angular asymmetry                 |
+| `C`               | Coherence scalar   likelihood that identity returns                       |
+| `δ`               | Torsion   the curvature memory retained from imperfect closure            |
+| `E_val`           | Validation energy   energy from the confirmed portion of the loop         |
+| `E_echo`          | Echonex energy   unresolved return energy of transduction feedback        |
+| `NARP`            | Normalized Arc Return Parameter   a geometric energy scaling constant     |
+| `χ`               | Curvature allocation ratio   fraction of energy allocated to torsion      |
+| `mc²`             | Total baryonic mass energy   sum of validation and echonex energy         |
+| `Q`               | Charge   arising from sign and power of angular asymmetry                 |
 
 ---
 
@@ -514,13 +514,14 @@ Together, these elements form a complete, closed system in which **no external c
 
 One of the most profound features of the Omnisyndetic Calculator is its **exact geometric derivation of ℏc** (Planck's constant times the speed of light). Rather than assuming ℏ or c as inputs, the calculator generates them from the **curvature dynamics of Nexonic return loops**.
 
-This is accomplished through the *Normalized Arc Return Pressure (NARP)* — a curvature pressure scalar that emerges when a triadic loop fails to complete its angular closure and radial coherence simultaneously.
+This is accomplished through the *Normalized Arc Return Pressure (NARP)*   a curvature pressure scalar that emerges when a triadic loop fails to complete its angular closure and radial coherence simultaneously.
 
 This formulation matches the known value of **ℏc ≈ 197.327 MeV·fm** to **five decimal places**, **without invoking empirical constants**.
 
+However ofcouse, for those not convinced by my method, Narp can also be understood as ℏc * CoherenceWindow. And have the exact ontological interpetation, just not stickly derived as I am attempting (like a mad man against all common sense)
 ### Implications:
 
-- ℏc is not a fixed constant of the universe—it is a **compression ratio** of loop coherence under structural tension.
+- ℏc is not a fixed constant of the universe it is a **compression ratio** of loop coherence under structural tension.
 - The quantum scale itself emerges from **topological saturation**: the point at which return pressure diverges beyond identity stability.
 - This reveals a new path to quantum limits: not through uncertainty or operators, but through **geometry and relational collapse**.
 
@@ -532,7 +533,7 @@ This stands as the first known derivation of ℏc from a **purely symbolic-geome
 
 
 ⚠ Important note:
-The included decay model is not ontologically derived, canonical, or geometrically grounded within the formal framework. It is a provisional, empirical implementation inspired by axial coupling effects, currently using an exponential fit to approximate decay behaviour. Its purpose is purely illustrative — to reflect ongoing developmental thinking and model behaviour under unstable or non-coherent configurations (e.g. duads/mesons).
+The included decay model is not ontologically derived, canonical, or geometrically grounded within the formal framework. It is a provisional, empirical implementation inspired by axial coupling effects, currently using an exponential fit to approximate decay behaviour. Its purpose is purely illustrative   to reflect ongoing developmental thinking and model behaviour under unstable or non-coherent configurations (e.g. duads/mesons).
 This placeholder will be replaced once duad and meson formation are fully derived within the framework’s transductive geometry.
 
 ## About the Author and Philosophical Commitment
@@ -540,18 +541,18 @@ This placeholder will be replaced once duad and meson formation are fully derive
 
 This project was developed independently by **Tyrone Gabriel Anderson**, a self-taught researcher working at the intersection of metaphysics, symbolic geometry, and simulation-based modeling. Built without institutional affiliation, the **Omnisyndetic Framework** and this calculator represent a personal, first-principles rethinking of how mass, charge, and structure can emerge purely from topological feedback.
 
-At its heart, this work is grounded in the belief that **education must be free**—not only in cost, but in imagination. Access to fundamental knowledge should never be limited by institutional boundaries, and the power to simulate, construct, and understand reality must belong to everyone.
+At its heart, this work is grounded in the belief that **education must be free** not only in cost, but in imagination. Access to fundamental knowledge should never be limited by institutional boundaries, and the power to simulate, construct, and understand reality must belong to everyone.
 
-This calculator is the first **operational demonstration** of the Omnisyndetic Framework. It proves that physical properties such as mass, charge, and curvature can be derived **algebraically** from loop geometry alone—without quantum fields, particles, or constants. It is both a metaphysical offering and a technical tool: a call for open knowledge and a challenge to inherited assumptions.
+This calculator is the first **operational demonstration** of the Omnisyndetic Framework. It proves that physical properties such as mass, charge, and curvature can be derived **algebraically** from loop geometry alone without quantum fields, particles, or constants. It is both a metaphysical offering and a technical tool: a call for open knowledge and a challenge to inherited assumptions.
 
 ---
 ## Rethinking Mass: Beyond the Higgs Mechanism
 
-The Omnisyndetic Framework provides a novel alternative to the standard narrative of mass generation. In contrast to the Standard Model of particle physics, which relies on **spontaneous symmetry breaking** via the Higgs field to grant mass to otherwise massless particles, this framework proposes that **mass is not something acquired**—but rather, **something remembered**.
+The Omnisyndetic Framework provides a novel alternative to the standard narrative of mass generation. In contrast to the Standard Model of particle physics, which relies on **spontaneous symmetry breaking** via the Higgs field to grant mass to otherwise massless particles, this framework proposes that **mass is not something acquired** but rather, **something remembered**.
 
 ### Mass from Return, Not Interaction
 
-In this system, mass is the cost of **partial return**. Every baryon is modeled not as a particle in a field, but as a **triadic loop of relational closure** that attempts—but fails—to return perfectly. This failure stores curvature tension, which expresses as mass.
+In this system, mass is the cost of **partial return**. Every baryon is modeled not as a particle in a field, but as a **triadic loop of relational closure** that attempts but fails to return perfectly. This failure stores curvature tension, which expresses as mass.
 
 Where field theories require:
 - **Interaction terms**
@@ -569,11 +570,11 @@ From these two relational inputs, the calculator reproduces:
 
 This is not a fit. It is a **closed-form derivation**. It bypasses traditional fields altogether.
 
-### A Constructive Geometry — Not a Model
+### A Constructive Geometry   Not a Model
 
-This system does **not reject** the Standard Model — it **bypasses** it. It shows that mass does not have to be *imposed* via scalar fields. Instead, it can be **constructed** from the structural memory of relational deviation.
+This system does **not reject** the Standard Model   it **bypasses** it. It shows that mass does not have to be *imposed* via scalar fields. Instead, it can be **constructed** from the structural memory of relational deviation.
 
-> “This is not a speculation. It is a geometry of being.” — *From Closure to Mass*, Preface
+> “This is not a speculation. It is a geometry of being.”   *From Closure to Mass*, Preface
 
 ### ℏc Without Assumption
 
@@ -594,7 +595,7 @@ This framework delivers a **working calculator** that:
 This is the **first proof-of-construction** of an entirely symbolic mass-generation engine.
 
 **The result:** Higgs fields may not be the only path.  
-Mass can arise not from interaction—but from the **topology of nearly failed return**.
+Mass can arise not from interaction but from the **topology of nearly failed return**.
 
 ---
 
@@ -618,7 +619,7 @@ Mass can arise not from interaction—but from the **topology of nearly failed r
 ### [The Geometry of Observation: Defining the Fundamental Shapes of Transductive Coherence in the Omnisyndetic Framework](https://doi.org/10.5281/zenodo.15211376)  
 Tyrone Gabriel Anderson (2025), Zenodo.
 
-This second paper formally develops the **topological structures** behind the framework, including Nexons, Duads, Triads, and Validatrices. It introduces all major field equations, PDE derivations, and coherence dynamics used in the baryon calculator. Every quantity—mass, curvature, desire field—is derived from feedback saturation and structural misclosure. No empirical coefficients are inserted.
+This second paper formally develops the **topological structures** behind the framework, including Nexons, Duads, Triads, and Validatrices. It introduces all major field equations, PDE derivations, and coherence dynamics used in the baryon calculator. Every quantity mass, curvature, desire field is derived from feedback saturation and structural misclosure. No empirical coefficients are inserted.
 
 > "This is not a metaphorical model. It is a mathematically functional field theory of being."
 
@@ -634,11 +635,11 @@ Both papers are licensed under **CC BY-SA 4.0 with an ethical use clause**:
 ### [The Geometry of Return: A Relational Ontology of Baryon Mass and Transductive Coherence](https://doi.org/10.5281/zenodo.15423177)  
 Tyrone Gabriel Anderson (2025), Zenodo.
 
-This third paper provides a full **algebraic derivation of the baryonic spectrum**—including proton and neutron mass, charge radius, decay widths, and fundamental constants—using only two geometric deviations: angular defect (\( \Delta\varphi \)) and radial coherence (\( \lambda \)). It demonstrates that mass does not require Higgs-field mechanics, spatial dimensions, or field-theoretic assumptions, achieving ±0.0001 MeV accuracy without empirical fitting.
+This third paper provides a full **algebraic derivation of the baryonic spectrum** including proton and neutron mass, charge radius, decay widths, and fundamental constants using only two geometric deviations: angular defect (\( \Delta\varphi \)) and radial coherence (\( \lambda \)). It demonstrates that mass does not require Higgs-field mechanics, spatial dimensions, or field-theoretic assumptions, achieving ±0.0001 MeV accuracy without empirical fitting.
 
 It introduces **Echonex structures** as coherence-memory fields, defines mass as relational tension from failed closure, and reconstructs spacetime and constants like \( \hbar c \) and \( c \) purely from geometric necessity.
 
-> "Mass is not a thing—it is the hold of geometry where closure fails."
+> "Mass is not a thing it is the hold of geometry where closure fails."
 
 ---
 
@@ -646,7 +647,7 @@ It introduces **Echonex structures** as coherence-memory fields, defines mass as
 ## [Charge as Closure in the Omnisyndetic Framework: A Relational-Ontology–Coherence Derivation of Quantisation](https://doi.org/10.5281/zenodo.15496177)  
 **Tyrone Gabriel Anderson** (2025), Zenodo
 
-This fourth paper delivers a complete **first-principles derivation of electric charge quantisation** from the same two geometric deviations—angular defect (Δφ) and radial coherence (λ)—that underlie the baryon mass spectrum. It shows how ±e, ±⅓e, and ±⅔e charges emerge inevitably from the discrete counting of “echo-unit” deficits in triads and duads, and how the familiar Dirac monopole condition falls out of a purely relational U(1) gauge connection.
+This fourth paper delivers a complete **first-principles derivation of electric charge quantisation** from the same two geometric deviations angular defect (Δφ) and radial coherence (λ) that underlie the baryon mass spectrum. It shows how ±e, ±⅓e, and ±⅔e charges emerge inevitably from the discrete counting of “echo-unit” deficits in triads and duads, and how the familiar Dirac monopole condition falls out of a purely relational U(1) gauge connection.
 
 ### Key contributions
 - **Echo-unit counting → quantised charge**  
@@ -656,7 +657,7 @@ This fourth paper delivers a complete **first-principles derivation of electric 
 - **Two-parameter unification**  
   Coherence radius λ governs mass spectra, while integer angular tension *w* fixes charge. Together they span the entire baryon zoo in the live “Baryon-Calculator,” reproducing known masses **and** charges to high precision.
 
-> “Charge is not a thing—it is the remainder of an almost-closed observation loop.”
+> “Charge is not a thing it is the remainder of an almost-closed observation loop.”
 
 
 
@@ -664,7 +665,7 @@ This fourth paper delivers a complete **first-principles derivation of electric 
 
 Everything shared here is part of a larger, open-access initiative.
 
-You can explore detailed explanations, diagrams, and evolving philosophical structures — all entirely free — at:
+You can explore detailed explanations, diagrams, and evolving philosophical structures   all entirely free   at:
 
 👉 **[omnisyndetics.org/axiom-zero-distinction-as-primacy](https://omnisyndetics.org/axiom-zero-distinction-as-primacy)**
 
