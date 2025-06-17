@@ -1,6 +1,6 @@
 # Omnisyndetic Framework
 
-**Omnisyndetics** is a formal relational ontology in which identity, structure, and reality itself emerge through the act of distinction. It rejects the notion of substance or form existing independently of relation, proposing instead that all actuality arises from the collapse of undifferentiated potential into coherent configuration.
+**Omnisyndetics** is an experiment in relational ontology in which identity, structure, and reality itself emerge through the act of distinction. It rejects the notion of substance or form existing independently of relation, proposing instead that all actuality arises from the collapse of undifferentiated potential into coherent configuration.
 
 This framework is grounded in the following core premise:
 
