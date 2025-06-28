@@ -37,6 +37,7 @@ From this understanding of observation and contrast, identity is not an inherent
 
 What we commonly refer to as "objects" are, within this ontology, stable convergence points within a dynamic network of relational returns. For a structure to have identity, it must achieve a "full relational closure"—meaning its internal distinctions are resolved and agree in a self-sustaining loop. This "topological agreement" is what gives form its persistence. For instance, a proton's identity, including its mass and charge, is precisely calculated as the outcome of such a resolved coherence. Form, in this view, does not endure as a fixed substance, but as a continuously validated coherence, arising from the ceaseless resolution of contrast. It's a journey of discovery, and we're just beginning to see how these pieces fit together.
 
+This calculator, grounded in the Omnisyndetic Framework, offers the first demonstrated proof of a core ontological idea: that baryon structure can be calculated as a relational pattern, without intrinsic masses or parameter fitting, constituted by a geometry of metaphysics that measures contrast in distinction rather than form. This framework rejects notions of fields, substrate, or constituency, focusing solely on measuring relations through modes of contrast and coherence. It posits that all identity and physical properties are immediately resolved via binary distinctions, a concept that aligns with the Tao Te Ching. This ontology rejects recursion and process as fundamentally valid descriptions of being. True to this principle, our goal was to create a complete, working baryon calculator that operates entirely within a single update cycle.
 
 ## Overview
 
@@ -55,16 +56,6 @@ From these inputs, the simulator computes:
 - Geometric coherence metrics (Planck-normalized where relevant)
 
 There are no fit parameters. No empirical values from the Standard Model are used beyond the measurable baryon radius and its charge. All numerical results emerge from structural closure within a single constraint field.
-
-Always show details
-
-Copy
-from pathlib import Path
-
-# Markdown-formatted content (unchanged)
-markdown_content = """# The Calculator: A Glimpse into Instantaneous Reality
-
-Our calculator, grounded in the Omnisyndetic Framework, offers the first demonstrated proof of a core ontological idea: that baryon structure can be calculated as a relational pattern, without intrinsic masses or parameter fitting, constituted by a geometry of metaphysics that measures contrast in distinction rather than form. This framework rejects notions of fields, substrate, or constituency, focusing solely on measuring relations through modes of contrast and coherence. It posits that all identity and physical properties are immediately resolved via binary distinctions, a concept that aligns with the Tao Te Ching. This ontology rejects recursion and process as fundamentally valid descriptions of being. True to this principle, our goal was to create a complete, working baryon calculator that operates entirely within a single update cycle.
 
 ## How It Works (Without All the Fuss!)
 
