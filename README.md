@@ -61,7 +61,8 @@ There are no fit parameters. No empirical values from the Standard Model are use
 
 This Unity project, operating via WebGL, is driven by its C# logic:
 
-**No Recursive Functions, Just Resolution:** Our calculator directly computes properties like mass and charge in a single calculation; it resolves identity and measurable properties from a structure's coherence under given relational conditions, rather than simulating processes.
+### No Recursion Only Direct Resolution
+Our ontology rejects recursion and proscess, stating being forms at return; therefore the calculator must do the same. There are no self-calling methods or `for`, `while` or `do while` loops that iterate through intermediate states. Instead every property—mass, charge, radius—is computed in a single Frame Update. The code evaluates curvature and coherence under the given relational conditions and returns the result immediately. There is no “in between” being and non-being; a structure either satisfies the coherence criteria or it does not. This direct resolution approach mirrors our ontological commitment and has been refined over months of development and regular updates.  
 
 **Geometric Simplicity:** The calculator derives mass, charge, and field energy purely from fundamental geometric relations—angular mismatch and radial deviation. Without particles, fields, or fundamental forces, all properties result from a relational loop's self-confirming closure, or the "burden" of its misclosure.
 
