@@ -39,7 +39,7 @@ What we commonly refer to as "objects" are, within this ontology, stable converg
 
 This calculator, grounded in the Omnisyndetic Framework, offers the first demonstrated proof of a core ontological idea: that baryon structure can be calculated as a relational pattern, without intrinsic masses or parameter fitting, constituted by a geometry of metaphysics that measures contrast in distinction rather than form. This framework rejects notions of fields, substrate, or constituency, focusing solely on measuring relations through modes of contrast and coherence. It posits that all identity and physical properties are immediately resolved via binary distinctions, a concept that aligns with the Tao Te Ching. This ontology rejects recursion and process as fundamentally valid descriptions of being. True to this principle, our goal was to create a complete, working baryon calculator that operates entirely within a single update cycle.
 
-## Overview
+## Calculator Overview
 
 This repository contains a Unity/WebGL application that calculates baryon properties using just two inputs:
 
@@ -400,8 +400,15 @@ All values emerge from topological misclosure in relational feedback loops.
 The included decay model is not ontologically derived, canonical, or geometrically grounded within the formal framework. It is a provisional, empirical implementation inspired by axial coupling effects, currently using an exponential fit to approximate decay behaviour. Its purpose is purely illustrative   to reflect ongoing developmental thinking and model behaviour under unstable or non-coherent configurations (e.g. duads/mesons).
 This placeholder will be replaced once duad and meson formation are fully derived within the framework’s transductive geometry.
 
-## 8. Collaboration
+## A Call for Collaboration
 
-This detailed exploration has been crafted in solitude with deep humility; I offer it openly in the hope that others will engage… discuss… expand upon these ideas. My aim is to publish this work open access and to build a community of collaborators who share an interest in relational coherence and structural contrast.
+Since I first began sketching these ideas nearly a decade ago and more fully committed to this project in 2023 I have worked alone to develop a coherent framework grounded in simple mathematics accessible even to undergraduates. Before redundancy swept through 600 000 of us in 2023 as AI automation reshaped the industry I served as a senior lead developer and programmer specialising in topology and computer graphics for teams at Stadia and Meta.
 
-If you have questions, insights or a desire to contribute, please visit omnisyndetics.org or write to me at tyronegabrielanderson@gmail.com. I look forward to any dialogue or partnership this invitation may inspire. I would love to hear from you. 
+I now dedicate myself fully to this open access endeavour and I need your help; if you share an interest in relational coherence and structural contrast or if you ever wanted a seminar or a ground up presentation or if you are curious about the blend of mathematics and philosophy at its core please reach out. I am ready to teach everything I know and to collaborate on papers essays or tools.
+
+Visit https://omnisyndetics.org for regularly updated essays and published papers  
+Email me at **tyronegabrielanderson@gmail.com**; I look forward to building this community together
+
+*Independent research by Tyrone Gabriel Anderson © 2025. Work begun in 2023.*  
+*All essays papers and updates on the website are open access; please reference appropriately.*  
+
