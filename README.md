@@ -139,8 +139,6 @@ No parameters are fitted; mass is resolved, not assigned.
 As λ approaches roughly 1 fm the structure reaches its radial coherence limit. Beyond that span distinction collapses and the baryon loses identity. Mass is therefore not an additive property of particles but the curvature required to hold a relational loop in a single instantaneous present. The Omnisyndetic Baryon Calculator implements this idea directly: every quantity is obtained from one-shot geometric resolution, not from temporal simulation.
 
 
-
-
 ## 1. Geometric Deviations
 
 - **Angular Deviation**  
@@ -160,7 +158,10 @@ As λ approaches roughly 1 fm the structure reaches its radial coherence limit. 
 - **Coherence Scalar**  
   $$C = e^{-\kappa}$$
 
-- **Residual Torsion**  
+- **Individuation Margin**  
+  $$\delta = \,1 - C\,}$$
+
+- **Desire Projection**  
   $$\delta = \sqrt{\,1 - C\,}$$
 
 ---
@@ -318,9 +319,7 @@ $$\begin{aligned}
 2. the survivable curvature band (\(W\)),  
 3. a tiny second-order overlap correction (\(B\)).  
 
-No empirical input only triadic geometry, coherence decay, and exact thresholds.
-
-
+No empirical input only triadic geometry, coherence, and exact thresholds.
 
 
 ## Baryon Configurations
@@ -335,7 +334,7 @@ Baryon
 - Mass: 1672.20 MeV  
 - Charge: 0  
 - Coherence: 0.9113  
-- Residual Torsion: 0.2979
+- Desire Propergation:  0.2979
 
 ### Σ⁺ (Sigma-plus)
 ![Σ+ (Sigma-plus) baryon](https://github.com/user-attachments/assets/65aa988d-03fa-4fa6-9e95-bfd30b962317)
@@ -344,7 +343,7 @@ Baryon
 - Mass: 1189.13 MeV  
 - Charge: +1.60e−19 C  
 - Coherence: 0.9290  
-- Residual Torsion: 0.2645
+- Desire Propergation: 0.2645
 
 ### Δ⁺⁺ Baryon
 ![Δ++ Baryon](https://github.com/user-attachments/assets/509986eb-6cae-4bce-a7f0-469b0ce35e9a)
@@ -353,7 +352,7 @@ Baryon
 - Mass: 1232.21 MeV  
 - Charge: +3.20e−19 C  
 - Coherence: 0.9126  
-- Residual Torsion: 0.2956
+- Desire Propergation: 0.2956
 
 ### Proton (p⁺)
 ![Proton](https://github.com/user-attachments/assets/e6d0542d-568c-4618-ba43-314595db9f96)
@@ -362,7 +361,7 @@ Baryon
 - Mass: 938.27 MeV  
 - Charge: +1.60e−19 C  
 - Coherence: 0.9372  
-- Residual Torsion: 0.2505
+- Desire Propergation: 0.2505
 
 ### Neutron (n⁰)
 ![Neutron](https://github.com/user-attachments/assets/75b082cf-5dcc-4193-9f8e-e266a7d72dea)
@@ -371,12 +370,12 @@ Baryon
 - Mass: 939.58 MeV  
 - Charge: 0  
 - Coherence: 0.9400  
-- Residual Torsion: 0.2450
+- Desire Propergation: 0.2450
 
 
 ## Accuracy Summary
 
-| Baryon        | Measured Mass (MeV) | Simulated | Error (%) | Charge (C)     |
+| Baryon        | Measured Mass (MeV) | Simulated | Error (%) | Charge (C)      |
 |---------------|----------------------|-----------|-----------|----------------|
 | Proton        | 938.272              | 938.27    | < 0.001   | +1.60e−19      |
 | Neutron       | 939.565              | 939.58    | < 0.002   | 0              |
@@ -413,3 +412,5 @@ Email me at **tyronegabrielanderson@gmail.com**; I look forward to building this
 *Independent research by Tyrone Gabriel Anderson © 2025. Work begun in 2023.*  
 *All essays papers and updates on the website are open access; please reference appropriately.*  
 
+
+Find more an https://omnisyndetics.org/
