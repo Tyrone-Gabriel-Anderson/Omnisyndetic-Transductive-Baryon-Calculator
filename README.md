@@ -9,9 +9,9 @@ It all starts with a very old idea, found in the *Tao Te Ching*:
 
 That’s the spark behind Contrast Algebra (well, actually more like obsessively reading these texts for years until it just became natural in my thinking, but let’s say spark), the formal system at the heart of this framework.
 
-It rejects the idea that anything exists by itself. There are no isolated substances or self-contained forms. Instead, all actuality arises from contrast, from the collapse of undivided potential into coherent relational structure. If something can’t be distinguished, it doesn’t exist — not relationally, not structurally.
+It rejects the idea that anything exists by itself. There are no isolated substances or self-contained forms. Instead, all actuality arises from contrast, from the collapse of undivided potential into coherent relational structure. If something can’t be distinguished, it doesn’t exist, not relationally, not structurally.
 
-Take a coin in mid-air. Is it heads or tails? Until it hits the floor and becomes part of a shared frame of reference, until it enters relation, it’s neither. It’s in **proto-truth** — contrast without resolution. Only when the coin lands and is seen do heads and tails exist as real distinctions. That’s how this framework treats everything, from logic to mass.
+Take a coin in mid-air. Is it heads or tails? Until it hits the floor and becomes part of a shared frame of reference, until it enters relation, it’s neither. It’s in **proto-truth** contrast without resolution. Only when the coin lands and is seen do heads and tails exist as real distinctions. That’s how this framework treats everything, from logic to mass.
 
 Everything here is a work in progress. Maybe it’s a toy model. Maybe it’s more. Either way, it’s a complete, functioning system with **no hand-tuned parameters**, just **one constant**, and straightforward derivations. And from that, we get the full baryon spectrum, calculated from first principles.
 
@@ -20,17 +20,9 @@ We even attempt here to derive **ℏc geometrically**, from contrast and closure
 What matters to me isn't mystique or elegance. It's that the structure is transparent, open, and traceable. Anyone can follow it, test it, and build on it.
 
 
-Thanks for being here. Welcome to **Omnisyndetics**.
-
-> To be or not to be — that’s the question.  
-> But here, the answer is simple:  
-> To be is to be **distinguishable**.  
-> And all distinction is **relational**.
-
-
 Thank you for being here. Welcome to **Omnisyndetics**.
 
-> To be or not to be — that’s the question.  
+> To be or not to be - that’s the question.  
 > But here, the answer is simple:  
 > To be is to be **distinguishable**.  
 > And all distinction is **relational**.
@@ -65,7 +57,7 @@ While diving into Contrast Logic is so fascinating and foundational to the Omnis
 Relational Identity
 From this understanding of observation and contrast, identity is not an inherent property but a resolved state. A structure persists not because of an underlying substance, but because it consistently maintains coherence under the relational constraints of its environment.
 
-What we commonly refer to as "objects" are, within this ontology, stable convergence points within a dynamic network of relational returns. For a structure to have identity, it must achieve a "full relational closure"—meaning its internal distinctions are resolved and agree in a self-sustaining loop. This "topological agreement" is what gives form its persistence. For instance, a proton's identity, including its mass and charge, is precisely calculated as the outcome of such a resolved coherence. Form, in this view, does not endure as a fixed substance, but as a continuously validated coherence, arising from the ceaseless resolution of contrast. It's a journey of discovery, and we're just beginning to see how these pieces fit together.
+What we commonly refer to as "objects" are, within this ontology, stable convergence points within a dynamic network of relational returns. For a structure to have identity, it must achieve a "full relational closure" meaning its internal distinctions are resolved and agree in a self-sustaining loop. This "topological agreement" is what gives form its persistence. For instance, a proton's identity, including its mass and charge, is precisely calculated as the outcome of such a resolved coherence. Form, in this view, does not endure as a fixed substance, but as a continuously validated coherence, arising from the ceaseless resolution of contrast. It's a journey of discovery, and we're just beginning to see how these pieces fit together.
 
 This calculator, grounded in the Omnisyndetic Framework, offers the first demonstrated proof of a core ontological idea: that baryon structure can be calculated as a relational pattern, without intrinsic masses or parameter fitting, constituted by a geometry of metaphysics that measures contrast in distinction rather than form. This framework rejects notions of fields, substrate, or constituency, focusing solely on measuring relations through modes of contrast and coherence. It posits that all identity and physical properties are immediately resolved via binary distinctions, a concept that aligns with the Tao Te Ching. This ontology rejects recursion and process as fundamentally valid descriptions of being. True to this principle, our goal was to create a complete, working baryon calculator that operates entirely within a single update cycle.
 
@@ -92,9 +84,9 @@ There are no fit parameters. No empirical values from the Standard Model are use
 This Unity project, operating via WebGL, is driven by its C# logic:
 
 ### No Recursion Only Direct Resolution
-Our ontology rejects recursion and proscess, stating being forms at return; therefore the calculator must do the same. There are no self-calling methods or `for`, `while` or `do while` loops that iterate through intermediate states. Instead every property—mass, charge, radius—is computed in a single Frame Update. The code evaluates curvature and coherence under the given relational conditions and returns the result immediately. There is no “in between” being and non-being; a structure either satisfies the coherence criteria or it does not. This direct resolution approach mirrors our ontological commitment and has been refined over months of development and regular updates.  
+Our ontology rejects recursion and proscess, stating being forms at return; therefore the calculator must do the same. There are no self-calling methods or `for`, `while` or `do while` loops that iterate through intermediate states. Instead every property mass, charge, radius is computed in a single Frame Update. The code evaluates curvature and coherence under the given relational conditions and returns the result immediately. There is no “in between” being and non-being; a structure either satisfies the coherence criteria or it does not. This direct resolution approach mirrors our ontological commitment and has been refined over months of development and regular updates.  
 
-**Geometric Simplicity:** The calculator derives mass, charge, and field energy purely from fundamental geometric relations—angular mismatch and radial deviation. Without particles, fields, or fundamental forces, all properties result from a relational loop's self-confirming closure, or the "burden" of its misclosure.
+**Geometric Simplicity:** The calculator derives mass, charge, and field energy purely from fundamental geometric relations angular mismatch and radial deviation. Without particles, fields, or fundamental forces, all properties result from a relational loop's self-confirming closure, or the "burden" of its misclosure.
 
 **Internally Derived Constants:** We don't use empirical constants like Planck's constant or the speed of light. Instead, these essential constants are derived internally from the geometry of coherence, suggesting rules inherent in a system's structure.
 
@@ -155,7 +147,7 @@ A baryon is modelled as a triadic loop of mutual observation: three nexons joine
 
 ### Accuracy and Results
 
-With λ set inside its experimental uncertainty (± 0.005 fm, CODATA/PDG), the framework predicts baryon masses to within ± 0.001 MeV—using only geometry.
+With λ set inside its experimental uncertainty (± 0.005 fm, CODATA/PDG), the framework predicts baryon masses to within ± 0.001 MeV using only geometry.
 
 | Baryon  | Radius λ (fm) | Computed Mass (MeV) |
 |---------|--------------:|---------------------:|
