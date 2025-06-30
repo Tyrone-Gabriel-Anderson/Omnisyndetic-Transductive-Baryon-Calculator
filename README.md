@@ -1,10 +1,40 @@
-# Omnisyndetic Framework
+# Welcome to Omnisyndetics
 
-**Omnisyndetics** is an experiment in relational ontology in which identity, structure, and reality itself emerge through the act of distinction. It rejects the notion of substance or form existing independently of relation, proposing instead that all actuality arises from the collapse of undifferentiated potential into coherent configuration.
+This is my open-source passion project in relational ontology, a working experiment in how identity, structure, and even reality itself can emerge purely through the act of distinction.
 
-This framework is grounded in the following core premise:
+It all starts with a very old idea, found in the *Tao Te Ching*:
 
-> To be is to be distinguishable, and all distinction is relational.
+> *Being and non-being give rise to each other.*  
+> Laozi, *Tao Te Ching*
+
+That’s the spark behind Contrast Algebra (well, actually more like obsessively reading these texts for years until it just became natural in my thinking, but let’s say spark), the formal system at the heart of this framework.
+
+It rejects the idea that anything exists by itself. There are no isolated substances or self-contained forms. Instead, all actuality arises from contrast, from the collapse of undivided potential into coherent relational structure. If something can’t be distinguished, it doesn’t exist — not relationally, not structurally.
+
+Take a coin in mid-air. Is it heads or tails? Until it hits the floor and becomes part of a shared frame of reference, until it enters relation, it’s neither. It’s in **proto-truth** — contrast without resolution. Only when the coin lands and is seen do heads and tails exist as real distinctions. That’s how this framework treats everything, from logic to mass.
+
+Everything here is a work in progress. Maybe it’s a toy model. Maybe it’s more. Either way, it’s a complete, functioning system with **no hand-tuned parameters**, just **one constant**, and straightforward derivations. And from that, we get the full baryon spectrum, calculated from first principles.
+
+We even attempt here to derive **ℏc geometrically**, from contrast and closure alone.
+
+What matters to me isn't mystique or elegance. It's that the structure is transparent, open, and traceable. Anyone can follow it, test it, and build on it.
+
+
+Thanks for being here. Welcome to **Omnisyndetics**.
+
+> To be or not to be — that’s the question.  
+> But here, the answer is simple:  
+> To be is to be **distinguishable**.  
+> And all distinction is **relational**.
+
+
+Thank you for being here. Welcome to **Omnisyndetics**.
+
+> To be or not to be — that’s the question.  
+> But here, the answer is simple:  
+> To be is to be **distinguishable**.  
+> And all distinction is **relational**.
+
 
 ## Observation and Collapse
 
