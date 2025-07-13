@@ -1,13 +1,13 @@
 # Welcome to Omnisyndetics
 
-This is my open-source passion project in relational ontology, a working experiment in how identity, structure, and even reality itself can emerge purely through the act of distinction.
+This is my open-source passion project in relational ontology, a working experiment in how identity, structure, and even reality itself can emerge purely through the act of distinction.The calculator here is a toy model proof of concept visual tool and open exploration.
 
 It all starts with a very old idea, found in the *Tao Te Ching*:
 
 > *Being and non-being give rise to each other.*  
 > Laozi, *Tao Te Ching*
 
-That’s the spark behind Contrast Algebra (well, actually more like obsessively reading these texts for years until it just became natural in my thinking, but let’s say spark), the formal system at the heart of this framework.
+That’s the spark behind Contrast Algebra (well, actually more like obsessively reading these texts for years until it just became natural in my thinking, but let’s say spark), the formal system at the heart of this framework. 
 
 It rejects the idea that anything exists by itself. There are no isolated substances or self-contained forms. Instead, all actuality arises from contrast, from the collapse of undivided potential into coherent relational structure. If something can’t be distinguished, it doesn’t exist, not relationally, not structurally.
 
