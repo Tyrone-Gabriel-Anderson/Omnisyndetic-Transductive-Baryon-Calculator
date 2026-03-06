@@ -1,0 +1,78 @@
+# === UNITY CORE FOLDERS ===
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+Recordings/
+
+# === WEBGL BUILD OUTPUT (customise if needed) ===
+Build/WebGL/
+Builds/WebGL/
+WebGLBuild/
+WebGL/
+
+# === VISUAL STUDIO / MONODEVELOP ===
+.vs/
+*.csproj
+*.sln
+*.user
+*.suo
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.opendb
+*.VC.db
+
+# === JETBRAINS / RIDER ===
+.idea/
+*.iml
+Assets/Plugins/Editor/JetBrains*
+
+# === UNITY GENERATED CRASH LOGS ===
+sysinfo.txt
+*.pdb
+*.mdb
+*.pdb.meta
+*.mdb.meta
+crashlytics-build.properties
+
+# === ADDRESSABLES ===
+Assets/AddressableAssetsData/*/*.bin*
+Assets/StreamingAssets/aa.meta
+Assets/StreamingAssets/aa/
+
+# === BUILD ARTIFACTS ===
+*.unitypackage
+*.unitypackage.meta
+*.app
+
+# === GRADLE / ANDROID (in case accidentally pulled in) ===
+.gradle/
+.android/
+*.jks
+*.keystore
+*.apk
+*.aab
+android/.gradle/
+android/.cxx/
+android/.idea/
+android/captures/
+android/build/
+
+# === EXPORTED OBJ, META, PLATFORM-SPECIFIC ===
+ExportedObj/
+*.meta
+*.log
+
+# === PLASTIC SCM (if still present) ===
+*.plastic/
+*.plastic*
+
+# === OS SYSTEM FILES ===
+.DS_Store
+Thumbs.db

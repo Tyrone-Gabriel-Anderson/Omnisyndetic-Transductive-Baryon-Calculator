@@ -44,7 +44,7 @@ Material:
     - _NoiseIntensity: 0.81
     m_Colors:
     - _Color: {r: 0, g: 0.077457786, b: 0.122641504, a: 1}
-    - _EndColor: {r: 0.3776164, g: 0, b: 1, a: 1}
-    - _StartColor: {r: 0.7452923, g: 0, b: 0.8, a: 1}
+    - _EndColor: {r: 0.49014077, g: 0.24973297, b: 0.8679245, a: 1}
+    - _StartColor: {r: 0.386289, g: 0.14960839, b: 0.7735849, a: 1}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

@@ -1,23 +1,24 @@
-﻿using UnityEngine;
+using UnityEngine;
 
-/// <summary>
-/// TransductiveCoherenceParticles controls the visual particle effect for a single "Nexon"
-/// in the TransductiveRelationalSimulator. It is not a literal representation of a physical particle,
-/// but a symbolic visualisation of coherence, identity stability, and topological integrity.
+/// ============================================================================
+/// TransductiveCoherenceParticles
 ///
-/// As coherence approaches 1 (perfect closure with zero angular/radial deviation), 
-/// the particle becomes small, radiant, and stable — symbolising resolved identity.
-/// As coherence drops (due to deviation from closure), the particle expands into a diffuse,
-/// noisy cloud — representing ontological decoherence, unresolved feedback, and structural tension.
+/// A small particle-system controller used as a visual diagnostic for the
+/// *register coherence* value C ∈ [0,1].
 ///
-/// The effect uses Unity's ParticleSystem to modulate size, shape, noise, emission rate, 
-/// and colour based on coherence. It interpolates between two gradients and adds procedural flicker
-/// under low coherence to convey instability.
-/// </summary>
+/// Interpretation inside the programme
+///   - C is a closure-grade scalar computed from ε and r_dev:
+///       C(λ,φ) = exp( - ( ε(λ,φ)^2 + r_dev(λ)^2 ) )
+///   - Visuals sharpen as C approaches 1 and diffuse as C decreases.
+///
+/// This component is deliberately agnostic about physical ontology.
+/// It is a UI layer for one scalar.
+/// ============================================================================
 [RequireComponent(typeof(ParticleSystem))]
 public class TransductiveCoherenceParticles : MonoBehaviour
 {
-    [Range(0f, 1f)] public float coherence = 1.0f; // Normalised coherence scalar (0 = decoherent, 1 = perfect)
+    [Range(0f, 1f)]
+    public float coherence = 1.0f;
 
     private ParticleSystem ps;
     private ParticleSystem.MainModule main;
@@ -29,7 +30,7 @@ public class TransductiveCoherenceParticles : MonoBehaviour
     private Gradient lowCoherenceGradient;
     private Gradient highCoherenceGradient;
 
-    void Start()
+    private void Start()
     {
         ps = GetComponent<ParticleSystem>();
         main = ps.main;
@@ -38,75 +39,57 @@ public class TransductiveCoherenceParticles : MonoBehaviour
         colorOverLifetime = ps.colorOverLifetime;
         noise = ps.noise;
 
-        BuildGradients(); // Pre-define colour curves for coherence extremes
-        UpdateVisualsFromCoherence(); // Initialise effect
+        BuildGradients();
+        UpdateVisualsFromCoherence();
     }
 
-    void Update()
-    {
-        UpdateVisualsFromCoherence(); // Continuously respond to coherence changes
-    }
+    private void Update() => UpdateVisualsFromCoherence();
 
-    /// <summary>
-    /// Updates the visual state of the Nexon particle effect based on the current coherence level.
-    /// All attributes — size, radius, emission, noise, and colour — are dynamically adjusted.
-    /// </summary>
     private void UpdateVisualsFromCoherence()
     {
-        // Size: collapse from fog to focused point
+        // Size: diffuse at low C, tight at high C.
         main.startSize = Mathf.Lerp(6.5f, 0.4f, coherence);
 
-        // Shape: inward curve with coherence (radial compression)
+        // Shape: expand at low C, compress at high C.
         shape.radius = Mathf.Lerp(5f, 0.2f, coherence);
         shape.radiusThickness = Mathf.Lerp(1.0f, 0.1f, coherence);
 
-        // Lifetime: more persistent under coherence
+        // Lifetime: longer trails at low C, cleaner at high C.
         main.startLifetime = Mathf.Lerp(8.0f, 2.0f, coherence);
 
-        // Emission rate: higher coherence = higher rhythmic output
+        // Emission: quiet under coherence (high C), noisy under low C.
         emission.rateOverTime = Mathf.Lerp(10f, 120f, coherence);
 
-        // Colour blend: use gradient to interpolate based on coherence level
+        // Colour: blend between two fixed gradients.
         colorOverLifetime.enabled = true;
         Gradient g = GradientLerp(lowCoherenceGradient, highCoherenceGradient, coherence);
         colorOverLifetime.color = new ParticleSystem.MinMaxGradient(g);
 
-        // Decoherence noise: enable only when unstable
+        // Noise: enabled only under low coherence (visual turbulence).
         noise.enabled = coherence < 0.5f;
         noise.strength = Mathf.Lerp(0.2f, 2.5f, 1.0f - coherence);
         noise.frequency = 0.2f + (1.0f - coherence) * 0.8f;
         noise.scrollSpeed = 0.1f + (1.0f - coherence) * 0.3f;
 
-        // HDR glow enhancement: intensify radiance with coherence
+        // Base tint (HDR-like): intentionally mild so it does not dominate UI.
         main.startColor = Color.Lerp(
-            new Color(0.1f, 0.1f, 0.2f, 0.3f),       // muted fog
-            new Color(2f, 1.8f, 1.2f, 0.8f),         // glowing gold-violet
+            new Color(0.15f, 0.15f, 0.25f, 0.25f),
+            new Color(1.2f, 1.0f, 0.7f, 0.75f),
             coherence
         );
     }
 
-    /// <summary>
-    /// Optionally call this externally to set coherence based on simulation state.
-    /// Uses a smooth exponential curve for visual response tuning.
-    /// </summary>
-    public void SetCoherence(float c)
-    {
-        float k = 2f; // curve steepness
-        coherence = 1f - Mathf.Exp(-c * k); // sigmoid curve for perceptual balance
-    }
+    /// External setter. Input is assumed to already be in [0,1].
+    public void SetCoherence(float c) => coherence = Mathf.Clamp01(c);
 
-    /// <summary>
-    /// Builds two predefined colour gradients for low and high coherence states.
-    /// These gradients are used to visually interpolate the particle cloud appearance.
-    /// </summary>
     private void BuildGradients()
     {
-        // 🔹 Low coherence → chaotic violet plasma fog
+        // Low coherence: cool haze
         lowCoherenceGradient = new Gradient();
         lowCoherenceGradient.SetKeys(
             new GradientColorKey[] {
-                new GradientColorKey(new Color(0.1f, 0.3f, 0.6f), 0.0f),  // deep blue
-                new GradientColorKey(new Color(0.3f, 0.2f, 0.5f), 1.0f)   // violet haze
+                new GradientColorKey(new Color(0.1f, 0.3f, 0.6f), 0.0f),
+                new GradientColorKey(new Color(0.3f, 0.2f, 0.5f), 1.0f)
             },
             new GradientAlphaKey[] {
                 new GradientAlphaKey(0.0f, 0.0f),
@@ -115,12 +98,12 @@ public class TransductiveCoherenceParticles : MonoBehaviour
             }
         );
 
-        // 🔹 High coherence → stable radiant nexus core
+        // High coherence: warm core
         highCoherenceGradient = new Gradient();
         highCoherenceGradient.SetKeys(
             new GradientColorKey[] {
-                new GradientColorKey(new Color(1.0f, 0.77f, 0.13f), 0.0f),  // golden orange
-                new GradientColorKey(new Color(1.0f, 0.06f, 0.73f), 1.0f)   // violet resonance
+                new GradientColorKey(new Color(1.0f, 0.77f, 0.13f), 0.0f),
+                new GradientColorKey(new Color(1.0f, 0.06f, 0.73f), 1.0f)
             },
             new GradientAlphaKey[] {
                 new GradientAlphaKey(0.4f, 0.0f),
@@ -130,11 +113,7 @@ public class TransductiveCoherenceParticles : MonoBehaviour
         );
     }
 
-    /// <summary>
-    /// Linearly interpolates between two Unity gradients.
-    /// This is used to smoothly transition the Nexon cloud between coherent and decoherent states.
-    /// </summary>
-    private Gradient GradientLerp(Gradient a, Gradient b, float t)
+    private static Gradient GradientLerp(Gradient a, Gradient b, float t)
     {
         Gradient result = new Gradient();
 
