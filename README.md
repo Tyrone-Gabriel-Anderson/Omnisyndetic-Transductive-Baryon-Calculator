@@ -76,20 +76,20 @@ Within that folder, the central implementation is:
 
 - `OmnisyndeticBaryonCalculator.cs`
 
-That file is the core of the project. Its own header states that it is the **Unity reference implementation**, a deterministic replay of the fixed register used by the wider calculator system, and that it does not introduce new constants, tuning factors, or per-state adjustments. It also lays out the functional contract of the tool, the core register functions, and how the Unity layer connects inputs, seat selection, band scanning, and diagnostic publication. :contentReference[oaicite:0]{index=0}
+That file is the core of the project. Its own header states that it is the **Unity reference implementation**, a deterministic replay of the fixed register used by the wider calculator system, and that it does not introduce new constants, tuning factors, or per-state adjustments. It also lays out the functional contract of the tool, the core register functions, and how the Unity layer connects inputs, seat selection, band scanning, and diagnostic publication.
 
 The other named scripts in this repository are better read as supporting visual layers around that core:
 
 - `RealTimeTriadVisualizer.cs`
 - `TransductiveCoherenceParticles.cs`
 
-`RealTimeTriadVisualizer.cs` is explicitly described as a **triadic visual diagnostic** driven by the quantities published by the baryon calculator. It is a visualisation layer, not the underlying derivation engine. :contentReference[oaicite:1]{index=1}
+`RealTimeTriadVisualizer.cs` is explicitly described as a **triadic visual diagnostic** driven by the quantities published by the baryon calculator. It is a visualisation layer, not the underlying derivation engine.
 
-`TransductiveCoherenceParticles.cs` is a particle-system controller used to visualise the scalar coherence value. It is also a UI and visual diagnostic layer rather than the core register logic. :contentReference[oaicite:2]{index=2}
+`TransductiveCoherenceParticles.cs` is a particle-system controller used to visualise the scalar coherence value. It is also a UI and visual diagnostic layer rather than the core register logic.
 
 So reading the codebase plainly: the actual centre of the work in this repository is `OmnisyndeticBaryonCalculator.cs`, while the triad and coherence scripts are there to help render parts of the state visually.
 
-The calculator file is commented and structured so that a reader can follow the implementation directly, inspect how the inputs are parsed, how the seat rules are applied, how the lawful scan is performed, and how the reported band is produced. :contentReference[oaicite:3]{index=3}
+The calculator file is commented and structured so that a reader can follow the implementation directly, inspect how the inputs are parsed, how the seat rules are applied, how the lawful scan is performed, and how the reported band is produced.
 
 ---
 
@@ -245,7 +245,7 @@ That condition is part of keeping the work open to independent checking at the l
 1. Clone or download this repository.
 2. Open the Unity project locally.
 3. Go to `Assets/Sources/Scripts/` if you want to inspect the code directly.
-4. Start with `OmnisyndeticBaryonCalculator.cs`, which contains the core implementation and comments. :contentReference[oaicite:4]{index=4}
+4. Start with `OmnisyndeticBaryonCalculator.cs`, which contains the core implementation and comments.
 5. Enter a baryon flavour configuration or the equivalent structural input.
 6. Adjust charge and spin where appropriate.
 7. Inspect the resulting geometric panels and certified band.
