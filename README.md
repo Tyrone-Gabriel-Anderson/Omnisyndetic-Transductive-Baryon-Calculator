@@ -83,9 +83,9 @@ The other named scripts in this repository are better read as supporting visual 
 - `RealTimeTriadVisualizer.cs`
 - `TransductiveCoherenceParticles.cs`
 
-`RealTimeTriadVisualizer.cs` is explicitly described as a **triadic visual diagnostic** driven by the quantities published by the baryon calculator. It is a visualisation layer, not the underlying derivation engine.
+Are explicitly **triadic visualisation** nothing here effects the caluclation these two scrips driven by the quantities published by the baryon calculator. 
 
-`TransductiveCoherenceParticles.cs` is a particle-system controller used to visualise the scalar coherence value. It is also a UI and visual diagnostic layer rather than the core register logic.
+`TransductiveCoherenceParticles.cs` is a particle-system controller used to visualise the scalar coherence value. It is also a UI and visual diagnostic layer rather than the core register logic. Not to be confused with particles in physics, it's just he particle effect system in unity for more visual feedback. 
 
 So reading the codebase plainly: the actual centre of the work in this repository is `OmnisyndeticBaryonCalculator.cs`, while the triad and coherence scripts are there to help render parts of the state visually.
 
