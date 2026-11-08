@@ -1,108 +1,62 @@
-# Omnisyndetic Framework Unity Project
-## Pre-Dynamical Geometric Baryon Calculator
+# Omnisyndetic Baryon Calculator
 
-![Omnisyndetic Framework preview](https://github.com/user-attachments/assets/ae98bd65-3947-42d4-9010-2dba73f4e098)
+### Pre-Dynamical Geometric Baryon Calculator
 
-This repository hosts the Unity project for the **pre-dynamical geometric baryon calculator** within the wider **Omnisyndetic Framework**.
+Omnisyndetic Framework · Unity · [Website](https://omnisyndetics.org/) · [OSF archive](https://osf.io/2qdmu/overview) · [Project DOI](https://doi.org/10.17605/OSF.IO/2QDMU)
 
-It is public so that anyone can inspect the code, audit the implementation, modify the tool, and reason with the calculator directly. Some browser-based demonstrations also appear on the main website, but this repository provides the downloadable Unity project for direct inspection and development.
+> **If quarks are fundamental, such that no deeper physical structure is available to determine their organisation, then from where does that organisation come? If non-essentialism is an accurate description of reality, then it cannot just be our qualitative descriptions that adhere to this; it demands quantitative description too.**
 
-The calculator sits within a wider open programme organised around the question:
+This is a full demonstration of the implementation of the Omnisyndetic Framework principles in order to derive the organisation of baryon classification in a single calculator, made inside Unity, demonstrating that it is fundamentally possible to do so from simple Pythagorean/planar Euclidean geometry! This is a completely open-source research project, developed independently and without funding, and offered as a blueprint for others to build from, reason with, scrutinise or break. Rather than beginning with things, or essences installed, we begin by asking about determination, dependency for any identity to be distinct from another, background from foreground, true from false.
 
-> **What follows if identity is not treated as primitive?**
+<img width="1916" height="973" alt="image" src="https://github.com/user-attachments/assets/860b0cb6-d406-420d-845c-95fb51bb16b7" />
 
-Under that inversion, the baryonic construction is explored without taking intrinsic constituent masses or arbitrary fitted constants as primitive inputs. The numerics used here are intended to be relationally and geometrically derived within the construction itself.
+## An invitation to investigate the classifier
 
-The full derivation chain and surrounding reasoning are set out in **Volume II — Pre-Dynamical Baryonic Structure**:  
-[https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure](https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure)
+The calculator given here is the result of years of exploration, refinement and careful dedication and is offered for free, as a blueprint or result that can be further built upon tested, played with or what ever you like for what ever reason you found it. Its significant because its existence demonstrates that from one single geometric shape, the whole classification is recovered. This page demonstrates everything within the browser. It is a live running calculation, allowing you to see the full predictive model and how all 55 baryons that are currently PDG-confirmed, to the date listed and within the scope given, can be recovered deterministically from this one simple predetermined geometry set. The complete derivation of this geometry for this audit may be found within Volume II, and you can explore across the full website of works, other step-by-step derivations, and navigate around. A lot of effort has been put into making this fully transparent so that anyone can enter. Please feel free to inspect the source code and see that nothing is being imported into the forward calculation. This uses no intrinsic mass inputs. It is a single derivation of a symmetry-group-theoretic structure that is able to recover the organisation within the declared audit boundary. Everything given here was done entirely free, without funding. It is the private work of one author, and anyone is welcome to explore these questions in ontology and fundamental physics.
 
-Step-by-step baryon derivations that can be followed directly in the mathematics are available here:  
-[https://omnisyndetics.org/predynamics-baryon-demonstrations](https://omnisyndetics.org/predynamics-baryon-demonstrations)
+## The metaphysical question underneath the dynamics
 
-This repository is here as a practical space for learning, testing, auditing, modification, and further development around the calculator itself.
+The question that began this exploration was partly inspired by Carlo Rovelli's 1996 paper on Relational Quantum Mechanics. If a physical fact is only at interaction, at an outcome that may be understood, received, reported or read in comparison relative to something else, then pre-physically, or more specifically metaphysically, what defines the potential for that interaction? If non-essentialism is an accurate description of reality, then from where does the determination of a quark come? Because it can't come from, as our methods do, intrinsic mass inputs and empirical inputs as parameters and separate groups. The organisation can determine possible identities, not the reverse. The simplest way to explain the entry into this work is that this is an ontology, but it is not an ontology of things, but rather an ontology of determination. It is not how we arrange things and what reality can be made, like mixing and matching primary pigments of colour and paint into the spectrum of colours we see, but rather what supplied the primary pigments of colour and paint in the first place. What allows the mixing of colours? What rules do they abide? What created that potential in the first place before there was a determinate outcome?
 
----
+## The core architecture: determination before object
 
-## Omnisyndetic Framework
+**Pronounced:** omni-syn-detic · **Name:** *omni* (all) + *syndetic* (binding) → **all-binding**
 
-**Pronounced:** omni-syn-detic  
-**Name:** *omni* (all) + *syndetic* (binding) → **all-binding**
+The whole premise of this exploration comes down to one core move at the beginning. Do not assume identity is primitively available. As such, we use synthetic geometry and move towards non-essentialist ontology. This means any quantitative exploration cannot use any primitive values, that is, any value which cannot be derived from the relation alone. If non-essentialism is to be held as an accurate description of reality, it cannot be held only where qualitative interpretation is convenient and then abandoned when quantitative determination begins. There cannot be a dual ontology between essentialism and non-essentialism, as that is just essentialism. Pure non-essentialism means the determining structure has to be derived from relation, not assumed granted or just given from the beginning because otherwise, without derived origin, it is a self-defining essence; every numeric must therefore reduce to the relation, not vice versa. Our quantitative and qualitative descriptions must align within the same foundation.
 
-**Definition:** an open programme in which identity is treated as a certified settlement outcome fixed by binding relations, rather than assumed in advance.
+Effectively, it can be understood as an attempt to see if a logical ontology can be something more than qualitative, and move quantitatively to possibly open new paths of derivation to recover the sequences and organisation we see in fundamental physics.
 
-### Organising question
+## Pregeometry: when returned dependency becomes measurable form
 
-**What follows if identity is not treated as primitive?**
+Under that austerity, this mathematical relation was discovered when considering fundamental units capable of resolving identity. We find a spectrum that can be classified using the roots of unity into mass structures. Each relatum-position has one directed witness and one inherited witness. Three relata give six witness sites. The six roles follow from the three inherited returns. Their later geometric realisation admits the hexagon, circle and triangle. Each directed edge has one inherited validation role associated with the third-relatum return.
 
-This repository belongs to the baryonic side of that wider programme. In this part of the work, the question is whether some aspects of baryon organisation, baryon classification, and associated mass-band structure can be approached through a fixed relational and geometric construction, prior to a full dynamical treatment.
+In the main body of work, we develop a hexagon inside the unit circle that gives us the resolution of three relata. That is the short and sweet of how this work has come to understand the baryon. There is a formal derivation of all this, beginning in first-order logic in Volume II. The shape was never allowed to explain the dependency. The dependency had to earn the shape first.
 
----
+## Why baryons are the quantitative test, not the definition of pre-dynamics
 
-## Main links
+This tool is a demonstration of the geometry that can be used to create baryon physics as modes of distinction in a symmetry-group-theoretic derivation. Importantly, this theoretical construction does not require or include any intrinsic mass inputs, fitted constants, or base input parameters. The system is derived from axiomatic relational geometry, meaning that every numeric is explicitly derived from the relation of the geometry itself, not free input parameters.
 
-| Resource | Purpose | Link |
-|---|---|---|
-| Main website | Public home page and project overview | [omnisyndetics.org](https://omnisyndetics.org/) |
-| OSF archive | Open research archive, hosted documents, and project materials | [OSF Project Overview](https://osf.io/2qdmu/overview) |
-| Why Pre-Dynamics | Introductory explanation of the pre-dynamical starting point | [why-pre-dynamics](https://omnisyndetics.org/why-pre-dynamics) |
-| Volume II | Full derivation chain for the geometric baryon construction | [Volume II](https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure) |
-| Demonstrations | Step-by-step baryon derivations and worked case files | [Baryon demonstrations](https://omnisyndetics.org/predynamics-baryon-demonstrations) |
+The recovered organisation accurately encodes the PDG data across 55 PDG-confirmed baryons, including the ground states of all flavour combinations and their PDG (J^P) spin-parity counterparts.
 
----
+The significance of this result is that the organisation and hierarchy of baryon spectroscopy can be recovered from a single relational geometric construction, without intrinsic mass inputs, tuneable coefficients, or separate flavour-sector parameterisation and it doesn't need to install flavour space or separate flavour groups, or have different geometry sets for charm, bottom, light or strange. It's all from one single algorithm, one single chain of mathematics. The physical energies of baryons and their hierarchy differ enormously. Nevertheless, there is a clear hierarchy here. Quite why that hierarchy is in the structure and form that it is, and quite where intrinsic mass values and empirical constants fit into this picture, beyond otherwise arbitrary determining input, remains an open question. Yet those determining values are not themselves explained by the Standard Model.
 
-## What this repository is for
+## The significance of the existence result
 
-This repository is the public codebase for the Unity implementation of the **pre-dynamical geometric baryon calculator**.
+And the question is, therefore: if fundamentally this structure can be recovered from nothing more than known Euclidean, Pythagorean and simple trigonometric geometry and relationships, what does this say about the necessity of the intrinsic values and empirical constants, in particular intrinsic mass, normally associated with the recovery of a fundamental structure like this? Obviously, there is a bit more than just that behind the ontology, but the maths, of course, is very simple.
 
-It is here for:
+This is why we say it is pre-dynamic and explore the question in this way because it's an ontological question. If the quark is fundamental in that there is no deeper physical structure to it then the question of its determinacy always was a metaphysical question, not a physical one.
 
-- **learning**, by giving a direct route into the project through a runnable geometric baryon tool
-- **testing**, by allowing users to enter baryon states and inspect the resulting outputs first-hand
-- **auditing**, by making the implementation open to inspection alongside the written derivations
-- **development**, as the calculator and wider project continue to grow
-- **extension**, for anyone who wants to adapt the tool or build from it in related work
+And my personal ontology of how I discovered it to one side, the existence of that result is mathematically significant because it shows that in practice, not just in principle, intrinsic mass input parameters and essentialist arbitrary inputs for calibration and tuning are not mathematically required to describe and recover the organisation. There exists at least one construction in which substantial joined baryonic organisation returns without the usual baryonic descriptive packages having served as the primitive determining inputs of the construction. The empirical baryon catalogue did not determine the classifier. That is enough to challenge two apparent arbitrarities at once. First, the enormous realised changes across light, strange, charm and bottom do not require another independent determining scale to be installed each time the classifier moves into another part of the physical catalogue. Second, charge, flavour content, radial organisation, mass organisation, ground-state organisation, negative structure and later decay ordering do not have to begin as fundamentally disconnected determining packages in order to return as distinct physical readings. They may belong to one prior organisation.
 
-This is a public working project. It is here to be opened, read, checked, modified, and explored.
+And I'm not saying that this gives point-like mass prediction or anything else like that. This is very much offered in keeping with the idea that further relationality and dynamics are required to break something into an outcome. But effectively, a condition of a potential, a band that may classify and return the discrimination of which baryon may appear there within that range, can be read directly from the geometry.
 
----
+## The rigidity of the geometry
 
-## Repository structure and core files
-
-The main Unity source files for the calculator and its related visual components can be found under:
-
-`Assets/Sources/Scripts/`
-
-Within that folder, the central implementation is:
-
-- `OmnisyndeticBaryonCalculator.cs`
-
-That file is the core of the project. Its own header states that it is the **Unity reference implementation**, a deterministic replay of the fixed register used by the wider calculator system, and that it does not introduce new constants, tuning factors, or per-state adjustments. It also lays out the functional contract of the tool, the core register functions, and how the Unity layer connects inputs, seat selection, band scanning, and diagnostic publication.
-
-The other named scripts in this repository are better read as supporting visual layers around that core:
-
-- `RealTimeTriadVisualizer.cs`
-- `TransductiveCoherenceParticles.cs`
-
-Are explicitly **triadic visualisation** nothing here effects the caluclation these two scrips driven by the quantities published by the baryon calculator. 
-
-`TransductiveCoherenceParticles.cs` is a particle-system controller used to visualise the scalar coherence value. It is also a UI and visual diagnostic layer rather than the core register logic. Not to be confused with particles in physics, it's just he particle effect system in unity for more visual feedback. 
-
-So reading the codebase plainly: the actual centre of the work in this repository is `OmnisyndeticBaryonCalculator.cs`, while the triad and coherence scripts are there to help render parts of the state visually.
-
-The calculator file is commented and structured so that a reader can follow the implementation directly, inspect how the inputs are parsed, how the seat rules are applied, how the lawful scan is performed, and how the reported band is produced.
-
----
+The geometry used here looks fancy, and a lot of effort was put in to give it that visual kick. But there is nothing more here than known geometric and Pythagorean relationships. It is a fully rigid derivation, meaning that, because the system is fully relational and every value is derived, changing any value breaks the whole system. It is a brittle, fine derivation, and yet somehow the recovery is real, and held openly here for anyone who may be inspired, or interested in alternative approaches to the physics organisation of spectroscopy.
 
 ## What the calculator delivers
 
-The calculator provides a **pre-dynamical geometric calculation of baryonic structure**.
-
-A user can enter either:
-
-- the **quark flavour content** of a baryon
-- or the equivalent **structural values** used by the framework
-
-From there, the calculator resolves the same state under the same fixed construction. The intended reading is that valid routes of entry converge on the same certified result, without a separate rescue layer behind the interface.
+This repository hosts the Unity project for the geometric baryon calculator within the wider Omnisyndetic Framework.
 
 The calculator returns linked outputs showing:
 
@@ -110,250 +64,135 @@ The calculator returns linked outputs showing:
 - the allowed or excluded charge-tier behaviour visible from that organisation
 - the corresponding state-space displacement read-out
 - the triadic geometric view associated with the construction
-- the resulting **rest-energy band** associated with that certified placement
+- the resulting rest-energy band associated with that certified placement
 
-The result is shown as a **band**, not as a fitted single value. The midpoint is reported only as the centre of the admitted interval.
-
-So putting this simply, the calculator lets a user enter flavour content, charge, and spin, then inspect how the fixed geometric construction resolves the placement and the corresponding baryon mass interval.
-
----
-
-## Pre-dynamical geometric baryon derivation
-
-The derivation implemented here is **pre-dynamical** in a strict sense.
-
-It does not begin by assuming space and time as primitive substrates of the construction, and it does not begin from a prior spacetime background into which the baryon is then placed. Instead, it begins from a fixed relational and geometric register, from which admissible organisation and mass-band assignment are read.
-
-This keeps the work at the level of prior structure. It also leaves open the possibility that later work may examine how dynamical, relativistic, and symmetry-group descriptions stand in relation to that same foundation.
-
-This repository should therefore be read as a practical implementation of a **pre-dynamical geometric baryon derivation**, not as a finished treatment of every further layer that may later be studied.
-
----
-
-## Geometric and relational numerics
-
-A central commitment of the project is that the numerics used by the baryon calculator are meant to come from the framework’s own fixed geometric and relational construction.
-
-Under the inversion where identity is not primitive, this part of the programme explores whether some aspects of baryon structure can be approached without beginning from:
-
-- intrinsic constituent masses
-- arbitrary fitted constants
-- state-by-state adjustment layers
-
-The intended contrast here is methodological. The project is exploring a non-essentialist relational route to particle structure, baryon classification, and baryon mass bands through a geometric construction internal to the framework itself.
-
-This should be read carefully. The calculator is not presented as a replacement slogan for established physics. It is a concrete object that can be inspected and checked by anyone interested in geometric baryon derivation, relational numerics, pre-dynamical structure, or alternative approaches to symmetry group classification.
-
----
-
-## What Volume II sets out
-
-**Volume II — Pre-Dynamical Baryonic Structure** sets out the full derivation chain for the geometric baryon construction used by this calculator.
-
-It presents:
-
-- a rigid six-site geometric register
-- a discrete admissible index
-- a finite catalogue of admissible placements indexed by ordered pairs ⟨L, U⟩
-- a uniform rule assigning each admissible placement a rest-energy bracket **[m_min, m_max]**
-- the corresponding midpoint as the centre of that admitted interval
-
-The construction is presented as a structural classification scaffold and mass-band read-out prior to any interaction model. Familiar labels such as flavour family, isospin, hypercharge, and multiplet organisation are then read as names for structure already fixed by the register once an admissible placement has been identified.
-
-The evaluation uses geometric and trigonometric relations internal to the construction, together with one declared reporting interface for conventional units. Within the declared boundary, the construction is presented without per-state fitting or particle-specific adjustment.
-
----
-
-## Audit form and boundary
-
-The audit form used by the wider release is **containment-only**.
-
-Each demonstration file records:
-
-- the measured PDG rest-energy value **m\***
-- the derived bracket **[m_min, m_max]**
-- the derived midpoint
-- the deterministic value chain producing those outputs
-
-### Boundary used in the current release
-
-The declared boundary covers PDG-established three-quark ground states across the light and strange sectors and through charm and bottom, together with immediate low-lying spin-3/2 partners where the PDG lists them in the same family.
-
-The working set for the released audit is:
-
-- **56 step-by-step baryon demonstrations**
-- under the selection rule stated in **Volume II**
-
-Higher resonances and orbital or radial excitations are excluded by design. Those states generally involve additional dynamical structure such as orbital angular momentum, radial excitation, mixing, and channel coupling. The present archive restricts the audit to a pre-dynamical boundary where the comparison can be made as a clean containment check.
-
----
-
-## Status at release
-
-As of this **2026 release**, the calculator reproduces the declared in-scope audit boundary with full containment under the stated rule. Within that boundary, the released construction places the audited ground-state baryons, including the immediate spin-3/2 partners included in the same selection, inside their assigned geometric rest-energy brackets.
-
-This statement is tied to the release boundary and release date. It refers to the confirmed PDG-established cases used for that release. Within that scope, the model is working as intended at the time of upload.
-
-The repository is also here for continued testing beyond that date. One purpose of making the calculator public is that future PDG-in-scope ground states can be checked against the same fixed construction and the same containment rule without changing the underlying setup.
-
-Users are also welcome to explore configurations beyond the original audited set. You can enter states that were not part of the released audit, inspect how the calculator resolves them, and see whether they align with a certified band under the same geometric rules.
-
----
-
-## What a user can do with it
-
-### Reproduce audited baryon states
-
-Users can enter established baryon flavour combinations and inspect the resulting geometric placement and associated rest-energy band under the fixed rules used by the calculator.
-
-### Explore beyond the audited set
-
-The same tool can also be used to test combinations beyond the presently audited census. This makes the repository useful not only for reproduction, but also for exploratory extension.
-
-### Inspect the geometry directly
-
-The Unity project is intended to show more than a numerical output. It allows users to inspect how geometric placement, charge-tier restriction, state-space displacement, and band assignment sit together as one connected construction.
-
-### Compare implementation and written material
-
-Because the project is public, users can compare the executable calculator against the wider written project and assess whether the implementation behaves in line with the stated structure.
-
-### Modify and build from it
-
-Anyone can inspect the codebase, adapt the interface, refine the presentation, extend the visualisation, experiment with related interaction models, or use the work as a starting point for nearby ideas of their own.
-
----
-
-## Ongoing programme and forward testing
-
-This repository belongs to an ongoing programme.
-
-The tools and calculators are included so that the same decoding and bracket evaluation can be executed for future catalogue updates, including new ground states accepted under the same declared boundary after the release date.
-
-A clean failure condition is built into the wider audit form:
-
-> if a future PDG-in-scope ground state has a stable rest energy outside the bracket assigned to its admissible placement under the stated rule, the construction fails on that case
-
-That condition is part of keeping the work open to independent checking at the level of specific cases.
-
----
+The result is shown as a band, not as a fitted single value. The midpoint is reported only as the centre of the admitted interval. Each cell is a lower–upper stratum pair defining a rest-energy band, not a point-like mass prediction. Further relationality and dynamics remain necessary for a particular physical outcome to be realised.
 
 ## How to use this repository
 
-### Recommended route
+**Use in full-screen mode for the best experience.**
 
 1. Clone or download this repository.
 2. Open the Unity project locally.
-3. Go to `Assets/Sources/Scripts/` if you want to inspect the code directly.
-4. Start with `OmnisyndeticBaryonCalculator.cs`, which contains the core implementation and comments.
-5. Enter a baryon flavour configuration or the equivalent structural input.
-6. Adjust charge and spin where appropriate.
-7. Inspect the resulting geometric panels and certified band.
-8. Cross-check the outcome against the wider project materials.
+3. Select a baryon from the drop down or enter its flavour and compute.
+4. Check the results against the PDG, and examine the output of tables for audit. 
+5. Toy around with the geometry and code, perturb the results, see the rigidity of the construction
 
-### Wider audit route
+### Controls
 
-A fuller audit route is:
+<table>
+<tr><td rowspan="8" width="260" valign="top"><img src="https://github.com/user-attachments/assets/3051780b-2a89-4d1d-9511-7343e691ae6b" width="250" alt="Omnisyndetic Calculator Controls" /></td><th>Input / display</th><th>Reading</th></tr>
+<tr><td><b>Baryon preset</b></td><td>Choose a baryon or enter a WDV.</td></tr>
+<tr><td><b>Custom / ordered vector</b><br>Flavour / WDV</td><td>Let A, B and C each take values 1 to 5.</td></tr>
+<tr><td><b>Spin J</b></td><td>1/2 · 3/2</td></tr>
+<tr><td><b>Radial support λ</b></td><td>Scan λ.</td></tr>
+<tr><td><b>Charge Q / energy</b></td><td>Q derived from WDV.</td></tr>
+<tr><td><b>REPLAY · RESET</b></td><td>REPLAY · RESET</td></tr>
+<tr><td><b>RESULTS: OVERVIEW / DETAILS</b></td><td>Returned cell · Energy band / midpoint · Live C / Cell C · Partner return</td></tr>
+</table>
 
-1. Run the calculator and obtain **⟨L, U⟩**, **[m_min, m_max]**, the midpoint, and the reported classification labels.
-2. Cross-check the bracket against the audit tables.
-3. Open the matching demonstration file and verify the stepwise value chain.
-4. Use **Volume II** to trace each step back to its definition and lemma-level derivation.
-5. Use the wider project materials for the admissibility discipline governing what counts as defined.
+### Try a configuration beyond the confirmed audit
 
-Agreement or disagreement should then localise to a specific stage:
+Feel free to have a play around and get familiar with the tools and understand the claim as it is being made here. You can input any flavour combination and its ground state or spin 3/2, hit calculate, and the system will return a band interval for where we predict and expect that combination to land within the geometry with a given mass interval.
 
-- admissibility or definition
-- identification
-- bracket evaluation
-- table transcription
-- implementation behaviour
+This can be used to make predictions about further future baryons currently not confirmed in the PDG. Feel free to experiment with the omega triple charm baryon by using either ccc, or you can use the step vector, the more native language of the framework, with a (4,4,4) combination. This is an exploratory geometric output, not a confirmed observational result.
 
----
+### Workspace
 
-## Relationship to the wider project
+| View | Reading |
+|:---|:---|
+| **GEOMETRY** | Inspect the geometry directly. |
+| **TABLE** | 125 WDVs · Complete classifier |
+| **DEPENDENCY** | The derivation works through reasoning of dependency, rather than self-reference or self-determination. |
+| **DECAYS** | Structural daughters |
+| **WORKED** | The full step-by-step derivation of the entire result, all the way through to the audit. |
+| **AUDIT** | Then each characteristic of each entry is audited against observed baryons. |
+| **TEX · FULL TEX** | This tool, alongside its interactive utilities, has a full LaTeX output system. |
 
-This repository is one part of the broader Omnisyndetic research programme.
+## 125 WDVs · Complete classifier
 
-The wider project includes:
+<img width="1910" height="977" alt="image" src="https://github.com/user-attachments/assets/9769c825-c433-4767-a3ca-d2153b788a4c" />
 
-| Area | Description |
-|---|---|
-| Pre-dynamical baryon work | geometric treatment of baryonic placement and rest-energy bands |
-| Demonstration files | step-by-step case derivations for the released audit set |
-| Audit materials | brackets and containment checks |
-| Browser tools | HTML and JavaScript calculators and demonstrations |
-| Interactive tooling | runnable projects such as this Unity implementation |
-| Public archive | hosted documents, research records, and released materials |
+Before looking at baryon data, we confirm the full structure: 125 ordered WDVs, 45 cyclic rereadings, 35 unordered profiles, seven scalar strata, the exact signed count and 18 structural cells. The ordinary group includes 111, 222 and 333. Classify all 125 configurations before comparing with observations or calculating their individual energy intervals. The other 24 ordinary WDVs each give two possible cells, one local and one outward. Across all 125 WDVs: 101 have one cell, 24 have two cells.
 
-This Unity repository belongs to the interactive and developer side of that wider effort.
+The cool part of it all is that, from geometry alone, without intrinsic mass inputs, separate sectors, or even tunable coefficients, just from ratios and combinatorics inside the unit circle, we find a structure that naturally contains the u,d,s,c,b flavour baryons with their charge, mass and potentially radii across J spins 1/2 and 3/2.
 
----
+## Structural daughters
 
-## Current role of the repository
+There is even a potential correspondence from the derived hierarchy to decay paths and routes. All may be explored and understood using this tool by using its output direct and then diving into the derivations and code behind it.
 
-At present, this repository should be understood as both:
+<img width="1914" height="981" alt="image" src="https://github.com/user-attachments/assets/141a4add-7c43-4c28-b27c-6524427a0100" />
 
-- a **usable public entry point** into the project
-- a **growing codebase** around the geometric baryon calculator
+## The existence claim and its limits
 
-It is already here to be used, tested, inspected, modified, and developed.
+And the question is, therefore, if fundamentally this structure can be recovered from nothing more than known Euclidean, Pythagorean, and simple trigonometric geometry and relationships, then ontologically, on the question of non-essentialism, what does this say about the necessity of the intrinsic values and empirical constants, in particular intrinsic mass, normally associated with the recovery of a fundamental structure like this?
 
----
+Here we have demonstrated that it is fundamentally possible to quantitatively derive the organization before the quark. This is not a completed theory and this is not anything to state that somehow the Standard Model is wrong, or that it is wrong for it to use its own parameterisation - far from it. As said, QCD and dynamics remain required. The question here comes before that precision: before those dynamics have been simulated, can there be a non-essentialist account of the organisation itself? Nature then answers a different question. Does that already-returned organisation actually correspond to the physical world?
 
-## Who this may be useful for
+## Reproduction, audit and falsification
 
-This repository may be useful to:
+Anything that sits outside its interval, any part, be it the charge, mass, flavour, that is not correctly classified counts against the construction, but the construction currently passes all PDG-confirmed and observed baryons, demonstrating the empirical alignment of the method, and giving us something that may be validated or falsified in the future.
 
-- readers who want a practical route into the project
-- researchers interested in geometric or structural approaches to baryonic organisation
-- developers who want to inspect or extend the interactive tooling
-- independent auditors who want to compare executable behaviour with the written claims
-- curious visitors interested in non-essentialist relational approaches to particle structure
+Then each characteristic of each entry is audited against observed baryons. All as physical correspondences read only after the fact. Never plugged into the derivation itself. A successful rest-energy interval does not compensate for an incorrect charge, flavour, spin organisation or other applicable output.
 
----
+The 55 audit contains all observed, confirmed baryon flavour combinations, and the full set of all step vectors is audited against all baryons of flavour combinations of u,d,s,c,b across positive-parity J^P = 1/2⁺ and J^P = 3/2⁺ baryons. All 55 of the test's observed states are reliably translated back through the construction in the current audit.
 
-## Science, philosophy, and open inspection
+The mathematics in this document is the output produced by the Omnisyndetic Baryon Calculator, available on GitHub. This tool, alongside its interactive utilities, has a full LaTeX output system. That way, once the full derivation had been programmed in, with each step written in LaTeX, the full output could be calculated directly, meaning that the same calculations could be reproduced for all 125 entries. This also reduces human error from repeatedly writing out and calculating these inputs by hand. Nevertheless, this demonstration shows, in principle and in practice, that it can be followed and calculated using a hand-operated calculator.
 
-The project is intended to remain connected to science, to philosophy, and to the space where the two still speak to one another with care.
+The reader is encouraged to follow the visual guide, reproduce the results for themselves and compare the derivation with this document. If a future confirmed baryon falls outside the derived interval, correctly classifying its mass, charge flavour and potentially radius, then the construction fails as there are no moving parts that can be calibrated to save it, these is a single shape, with every entry as a possible face of that shape, and no part can move or slide to save any other 
 
-The scientific side asks whether the construction can be checked, followed, reproduced, or found wanting at the level of specific definitions, value chains, and cases.
+<img width="1910" height="976" alt="image" src="https://github.com/user-attachments/assets/8dd30c27-501a-4102-9e5a-567c7db16d5e" />
 
-The philosophical side asks what changes when identity is treated as a certified outcome of binding relations rather than as an assumed primitive.
+## Sources / Scripts
 
-This repository is one small part of holding those two concerns together in public, in a form that can be opened and examined rather than only described.
+The main Unity source files for the calculator and its related visual components can be found under Assets/Sources/Scripts/. In the scripts folder, you will find five scripts:
 
----
+- **`OmnisyndeticBaryonCalculator`** – Where the whole calculation takes place and the point to dive in.
+- **`OmnisyndeticClassifierServices`** – Interface between feedback and calculation, and where the audit inputs of PDG data are held. This input is only used for audit, not calculation.
+- **`OmnisyndeticDashboardUI`** – Purely aesthetic and visual feedback.
+- **`RealTimeTriadVisualizer`** – Purely aesthetic and visual feedback.
+- **`TransductiveCoherenceParticles`** – Purely aesthetic and visual feedback.
 
-## Contact
+That file is the core of the project.
 
-If you have questions about the project, the calculator, the implementation, or the surrounding derivations, you are welcome to get in touch:
+## The wider project
 
-**Email:** tyronegabrielanderson@gmail.com
+Volume I is focused more on the ontology and the foundations, the ideas of an investigation towards determinacy. Volume II brings those formal postulates and theorems forward into the geometry that is shown and demonstrated in this document.
 
----
+This document is partnered with its sister paper, A Visual Guide to the Triad Construction: A Step-by-Step Guide, Declaration and Existence Result of Baryon Organisation from Elementary Geometry.
 
-## A closing note
+That paper gives the first visual entry into the entire formalism, alongside more detailed written explanations and examinations of the existence result across a demonstration of a hundred pages.
 
-If you have found this repository, thank you for taking the time to look through it.
+The reader is encouraged to follow the visual guide, reproduce the results for themselves and compare the derivation with this calculator.
 
-This is a small project within a larger ongoing piece of work. It is shared openly in the hope that it may be useful to readers, testers, critics, developers, and anyone with an interest in geometric approaches to baryons, relational approaches to physics, or careful alternatives to more essentialist starting points.
+Then, for the more substantial explanation and investigation, from the ontology into the full necessity and discovery of this geometry set, from analytic philosophy into formal theorem structure, lemmas and derivation, look to the main volumes, Volume I and Volume II.
 
-Whether you are here to inspect the code, follow the derivations, test the calculator, question the construction, or simply look around with curiosity, your attention is genuinely appreciated.
+| Resource | Link |
+|:---|:---|
+| Main website | [omnisyndetics.org](https://omnisyndetics.org/) |
+| Open Science Framework | [OSF archive](https://osf.io/2qdmu/overview) |
+| Project DOI | [10.17605/OSF.IO/2QDMU](https://doi.org/10.17605/OSF.IO/2QDMU) |
+| Why Pre-Dynamics | [Introductory explanation](https://omnisyndetics.org/why-pre-dynamics) |
+| Volume II | [The six-site classifier](https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure) |
+| Demonstrations | [Step-by-step baryon derivations](https://omnisyndetics.org/predynamics-baryon-demonstrations) |
 
----
+## Why Unity?
+
+This is due to my personal preference, having spent most of my career working in games development. But this can be fully reproduced in HTML, JavaScript, or whatever else. It isn't dependent on any particular Unity packages.
 
 ## Licence
 
 - **Content:** CC BY-SA 4.0
 - **Code:** AGPL-3.0
 
----
+Remember, this is a share-alike project, so any further work built from the research here should maintain the same spirit through which this work was developed: open transparency at all levels.
 
-## Quick access
+## A closing note
 
-- **Main website:** [https://omnisyndetics.org/](https://omnisyndetics.org/)
-- **OSF archive:** [https://osf.io/2qdmu/overview](https://osf.io/2qdmu/overview)
-- **Why Pre-Dynamics:** [https://omnisyndetics.org/why-pre-dynamics](https://omnisyndetics.org/why-pre-dynamics)
-- **Volume II:** [https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure](https://omnisyndetics.org/volume-ii-pre-dynamical-baryonic-structure)
-- **Demonstrations:** [https://omnisyndetics.org/predynamics-baryon-demonstrations](https://omnisyndetics.org/predynamics-baryon-demonstrations)
+These questions are far more explored across this website and mostly the volumes released. Everything given here was done so entirely free, without funding. It is the private work of one author, and anyone is welcome to explore these questions in ontology and fundamental physics. So take this as your formal invitation to begin researching and investigating, and remember to look at the volumes hosted on the Open Science Framework, downloaded as PDFs directly from the website.
+
+Please scan through the whole scale, work through each piece using the slider, or click through the table of present baryons to update the calculator, and above all have fun!
+
+So thank you for being here. You are more than welcome. This has been a labour of love, a passion project. It is offered entirely for free. 
+
+Tyrone Gabriel Anderson · [TyroneGabrielAnderson@gmail.com](mailto:TyroneGabrielAnderson@gmail.com)
