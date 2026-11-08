@@ -105,7 +105,7 @@ This can be used to make predictions about further future baryons currently not 
 | **TABLE** | 125 WDVs · Complete classifier |
 | **DEPENDENCY** | The derivation works through reasoning of dependency, rather than self-reference or self-determination. |
 | **DECAYS** | Structural daughters |
-| **WORKED** | The full step-by-step derivation of the entire result, all the way through to the audit. |
+| **WORKED** | A small visual step though of the peices, full worked exampels in latex output form calculator. |
 | **AUDIT** | Then each characteristic of each entry is audited against observed baryons. |
 | **TEX · FULL TEX** | This tool, alongside its interactive utilities, has a full LaTeX output system. |
 
