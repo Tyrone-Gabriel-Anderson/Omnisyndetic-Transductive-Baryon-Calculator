@@ -18,6 +18,8 @@ The calculator given here is the result of years of exploration, refinement and 
 
 The question that began this exploration was partly inspired by Carlo Rovelli's 1996 paper on Relational Quantum Mechanics. If a physical fact is only at interaction, at an outcome that may be understood, received, reported or read in comparison relative to something else, then pre-physically, or more specifically metaphysically, what defines the potential for that interaction? If non-essentialism is an accurate description of reality, then from where does the determination of a quark come? Because it can't come from, as our methods do, intrinsic mass inputs and empirical inputs as parameters and separate groups. The organisation can determine possible identities, not the reverse. The simplest way to explain the entry into this work is that this is an ontology, but it is not an ontology of things, but rather an ontology of determination. It is not how we arrange things and what reality can be made, like mixing and matching primary pigments of colour and paint into the spectrum of colours we see, but rather what supplied the primary pigments of colour and paint in the first place. What allows the mixing of colours? What rules do they abide? What created that potential in the first place before there was a determinate outcome?
 
+The much wider project is an ontology of determinacy and Conditionality rather than an ontology of things and how they interact. The larger body of work investigates non-essentialist determination requires, but here we are declaring the result of that discovery not the necessary.
+
 ## The core architecture: determination before object
 
 **Pronounced:** omni-syn-detic · **Name:** *omni* (all) + *syndetic* (binding) → **all-binding**
@@ -25,6 +27,66 @@ The question that began this exploration was partly inspired by Carlo Rovelli's 
 The whole premise of this exploration comes down to one core move at the beginning. Do not assume identity is primitively available. As such, we use synthetic geometry and move towards non-essentialist ontology. This means any quantitative exploration cannot use any primitive values, that is, any value which cannot be derived from the relation alone. If non-essentialism is to be held as an accurate description of reality, it cannot be held only where qualitative interpretation is convenient and then abandoned when quantitative determination begins. There cannot be a dual ontology between essentialism and non-essentialism, as that is just essentialism. Pure non-essentialism means the determining structure has to be derived from relation, not assumed granted or just given from the beginning because otherwise, without derived origin, it is a self-defining essence; every numeric must therefore reduce to the relation, not vice versa. Our quantitative and qualitative descriptions must align within the same foundation.
 
 Effectively, it can be understood as an attempt to see if a logical ontology can be something more than qualitative, and move quantitatively to possibly open new paths of derivation to recover the sequences and organisation we see in fundamental physics.
+
+## Declaring existence under non-essentialist austerity
+
+The existence claim is conditional on the acceptance and viability of non-essentialism and began as a test of that to see what was possible, and in the end discovered and is now reporting the existence of this result.
+
+Pure non-essentialism means the determining structure has to be derived from relation, not assumed granted or just given from the beginning.
+
+**Existence declaration** This visual guide declares and reproduces one geometric baryon classifier under the following austerity. Its existence establishes that intrinsic constituent inputs, fitted coefficients and separate flavour rules are not necessary for this derivation. The necessity of this particular geometry is explored in Volume II.
+
+### A / The first condition
+
+Let's give a really simple example of dependency: for anything to be background, it must be separate from foreground. Anything that is true must have excluded the potential of being false. This is the dependency for determination, in a loose sense. For any identity to be, it must be distinguishable from that which it is not.
+
+A determined outcome requires a condition capable of satisfaction or failure. If there is an outcome, the condition must have been met that it has excluded all potential of being the opposition, if no result is, and both are still potentially possible, then no condition has been met at all. So nothing is just because it is, nothing can distinguish itself from itself. Even concepts of being and non-being are only meaningful by their separation. A much larger concept we focus on far more heavily. And importantly, P ∨ ¬P, meaning: either P is true, or not-P is true, is not a third state of existence, it's an existing comparison that has not been broken into a single outcome, or multiple comparisons that do not converge, but for a comparison to be in the first place, it must be separated from that which it compares. All of this is explored formally in Volume II, for now these are just conceptual thoughts to mediate with as you read this work.
+
+### B / Naming is not determining
+
+Naming something q does not ontologically mean q has a domain or that q is self-defining.
+
+The stance taken in this work is that description is not generative. Something does not exist because we named it, and naming may depend on something being definite and bound, or even definite in being boundless, but it is not the mechanism through which things may become defined.
+
+### C / Why austerity follows
+
+We define an essence here as something that may self-determine how its identity is read in further comparison.
+
+So an essence is anything that is self-defining and thus fundamentally arbitrary, as it has no further dependent explanation beyond itself.
+
+The austerity is that no logical predicate or numeric can be available with determining outcome in an isolated essence. A participating identity requires convergent, mediated dependency.
+
+### Why the same austerity applies to mathematics
+
+A determining input supplied independently of the dependency would take the same self-grounding role denied to an isolated q. Calling it a number, coefficient, function or parameter does not change its origin.
+
+### Inputs that cannot be used under this austerity
+
+Not a ban on mathematical operations.
+
+**CANNOT BE USED AS AN INDEPENDENT INPUT / WHY IT WOULD VIOLATE THE AUSTERITY**
+
+- **Self-defining constituent identity**
+
+  If a constant or variable is not exclusively derived from the dependency, then it is a self-defined essence, no tuned or underived parameters.
+
+- **Tuneable coefficients, separate fit scaling or sector parameterisation, tensors with hand selection mechanisms, fitted variables/parameters or free values**
+
+  Once again, without a derived origin of any determining input, that input is an installed essence.
+
+- **Intrinsic masses, assumed charge inputs or flavour space properties**, without ever needing to treat the quark as a constituent with its own virtue and essence of properties that are plugged into equations. That means no installed packages of constituent values before the shared geometry has returned baryon classification. All numerics must come from combinatorics of or ratios of real geometrically derived constants.
+
+- **Underived constants or numerical weights:** A number cannot determine the result without a derived origin in the realttion it particpiates, this is why we only use real derive contants form the geoemtry, and not seprate goemetry, the same goemtry everyhting else comes from too.
+
+- **Underived numbers:** Nothing in the construction can be added unless it has an origin explicitly in the geometry. So no adding empirical numbers because they work, prediction is not a good enough benchmark when the question is about foundations and ontology. At no point can the construction use functions or inputs that otherwise depend on constituent underived installed properties. Only real constants and combinatorics thereof.
+
+- **Extra scales or conversions:** We cannot add factors, tune or add sector or species-specific scales and rules to make the results fit.
+
+- **Separate rules:** Outliers break the construction. Charm, bottom and individual baryons cannot have their own added rules.
+
+- **Empirical inputs:** Observations can test the results, can use them for auditing, but selecting baryons to tune to, or inputs again is forbidden by the non-essentialist commitment and austerity.
+
+- **The geometry:** The hexagon comes from the six-site circuit, and the square gives us a ratio from the same unit circle. Neither is an extra input. We can use ordinary mathematics, including π and e, without adding values just to get the result we want, and from here see if it is possible at all to derive the hierarchy and classification and if it is possible as this work claims, examine what that means philosophically for our assumptions about fundamentality and our ontologies moving forward.
 
 ## Pregeometry: when returned dependency becomes measurable form
 
@@ -128,6 +190,10 @@ There is even a potential correspondence from the derived hierarchy to decay pat
 And the question is, therefore, if fundamentally this structure can be recovered from nothing more than known Euclidean, Pythagorean, and simple trigonometric geometry and relationships, then ontologically, on the question of non-essentialism, what does this say about the necessity of the intrinsic values and empirical constants, in particular intrinsic mass, normally associated with the recovery of a fundamental structure like this?
 
 Here we have demonstrated that it is fundamentally possible to quantitatively derive the organization before the quark. This is not a completed theory and this is not anything to state that somehow the Standard Model is wrong, or that it is wrong for it to use its own parameterisation - far from it. As said, QCD and dynamics remain required. The question here comes before that precision: before those dynamics have been simulated, can there be a non-essentialist account of the organisation itself? Nature then answers a different question. Does that already-returned organisation actually correspond to the physical world?
+
+This is not a claim that further physical substrate is impossible, but rather it is offered in favour of the possibility of non-essentialist ontology. Non-essentialism requires a non-essentialist account of the organisation and hierarchy of at least the fundamental ground-state spin-$1/2$ and spin-$3/2$ baryons. Other resonances can be understood as requiring further dynamics and relationality, in keeping with a non-essentialist account and relational quantum mechanics, where a physical fact arises through interaction. Point-like mass prediction also requires further relationality, again in keeping with non-essentialist interpretations.
+
+This is a complement to QCD. The 125 ordered configurations are necessary outcomes within the construction, not a separate proposal that QCD must first establish the possibility of baryons. A later observation, including a triply charmed $\Omega_{ccc}$, may test the already returned energy interval, but it does not by itself settle the non-essentialist existence argument. QCD's established baryon framework is the physical context against which the organisation is compared.
 
 ## Reproduction, audit and falsification
 
